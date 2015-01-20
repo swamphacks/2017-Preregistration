@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Norican);
+/*ELEMENTS========================*/
+html {
+  overflow-y: always;
+  overflow-x: hidden;
+}
+.footer {
+  padding: 1em;
+  padding-top: 0em;
+}
+/*FEATURETTE======================*/
+.background-img {
+  background: url('../images/fries.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 350px;
+  margin: 0;
+  color: white;
+}
+.feature-row {
+  height: 350px;
+  margin: 0;
+  color: white;
+}
+.feature-row h1:first-child {
+  margin-top: 100px;
+}
+.el-screen {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+.black-bg {
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+/*NAVBAR======================*/
+#navbar.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.navbar {
+  background: none;
+  margin-bottom: 0;
+}
+.nav.navbar-nav > li > a {
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+.nav.navbar-nav > li > a:hover,
+.nav.navbar-nav > li > a:active {
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+/*ROW============================*/
+.material-shadow {
+  box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.5);
+}
+.row-spacing {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+}
+.row-blue {
+  background: #2a75f3;
+  color: white;
+}
+.row-orange {
+  background: #ff4408;
+  color: white;
+}
+/*MAPS==========================*/
+.maps-container {
+  height: 250px;
+  border-radius: 1em;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-color: white;
+  border-style: solid;
+}
+#gmaps {
+  width: 100%;
+  height: 250px;
+}
+/*TEXT==========================*/
+.title-text {
+  font-family: "Norican";
+}
+.white-text {
+  color: white;
+}
+/*ANIMATIONS===================*/
+.fade-anim {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
