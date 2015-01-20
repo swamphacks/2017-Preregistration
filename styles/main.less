@@ -14,6 +14,12 @@ html {
 	padding-top: 0em;
 }
 
+.container {
+	padding-left: 2em;
+	padding-right: 2em;
+	max-width: 960px;
+}
+
 /*FEATURETTE======================*/
 .background-img {
 	background: url('../images/fries.jpg') no-repeat center center; 
@@ -49,8 +55,11 @@ html {
 }
 
 /*NAVBAR======================*/
+#navbar-main {
+	.fade-anim();
+}
 
-#navbar.affix {
+#navbar-main.affix {
     position: fixed;
     top: 0;
     width: 100%;
@@ -81,6 +90,13 @@ html {
 	box-shadow: 0 0 0.25em 0.25em rgba(0,0,0,0.5);
 }
 
+.row {
+	overflow-x: hidden;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 .row-spacing {
 	margin-bottom: 1.5em;
 	padding-bottom: 1.5em;
@@ -96,20 +112,26 @@ html {
 	.white-text();
 }
 
+.auto-margin {
+	margin: 0 auto;
+}
+
 /*MAPS==========================*/
 
 
 .maps-container {
 	height: @maps-height;
-	border-radius: 1em;
 	border-top-width: 3px;
 	border-bottom-width: 3px;
 	border-color: white;
 	border-style: solid;
+	overflow: hidden;
+	width: 450px;
+	margin: 0 auto;
 }
 
 #gmaps {
-	width: 100%;
+	width: 450px;
 	height: @maps-height;
 }
 

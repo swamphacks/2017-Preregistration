@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$("#navbar").affix({});
+	$("#navbar-main").affix({});
 });

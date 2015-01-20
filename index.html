@@ -22,7 +22,7 @@
 
   <body>
      <div class="navbar-wrapper">
-        <nav id="navbar" class="navbar navbar-fixed-top">
+        <nav id="navbar-main" class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,12 +33,14 @@
               </button>
               <a class="navbar-brand title-text" href="#">SwampHacks</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#what">About</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#where">Where?</a></li>
                 <li><a href="#who">Who?</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#where">Where?</a></li>
+                
               </ul>
             </div>
           </div>
@@ -47,12 +49,14 @@
 
     <div class="main">
       <div class="row material-shadow feature-row background-img">
-        <div class="container text-center black-bg">
-            <h1 class="title-text">SwampHacks</h1>
-            <h3><span class="mdi-device-access-alarm"></span> March 13 @ 8 PM - March 14 @ 2 PM</h3>
-            <h3><span class="mdi-notification-sms-failed"></span>(Site under construction)</h3>
+        <div class="black-bg">
+          <div class="container text-center ">
+              <h1 class="title-text">SwampHacks</h1>
+              <h3><span class="mdi-device-access-alarm"></span> March 13 @ 8 PM - March 14 @ 2 PM</h3>
+              <h3><span class="mdi-notification-sms-failed"></span>(Site under construction)</h3>
+          </div>
         </div>
-      </div><!--.row.feature-row.black-bg-->
+      </div><!--.row.feature-row-->
 
       <div class="row row-spacing">
         <div class="container">
@@ -67,13 +71,13 @@
       <div class="row row-blue row-spacing">
         <div class="container">
           <h2 id="who">Who's Behind It?</h2>
-          <div class="col-lg-4 col-sm-4 col-xs-11">
+          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
             <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
           </div>
-          <div class="col-lg-4 col-sm-4 col-xs-11">
+          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
             <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
           </div>
-          <div class="col-lg-4 col-sm-4 col-xs-11">
+          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
             <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
           </div>
         </div>
@@ -99,19 +103,49 @@
 
       <div class="row row-orange row-spacing">
         <div class="container">
-          <h2 id="where">Where Is It?</h2>
-        </div>
-        <div class="maps-container material-shadow">
-          <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.3582479922866!2d-82.34404999999997!3d29.65137700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3828c70ecb9%3A0xe47ec8e7254ceb3d!2sKeene-Flint+Hall!5e0!3m2!1sen!2sus!4v1421729429904"frameborder="0" style="border:0"></iframe>
+          <h2 id="sponsors">Our Sponsors</h2>
+          <div class="col-lg-3 col-sm-3 col-xs-6">
+            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-6">
+            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-6">
+            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          </div>
+          <div class="col-lg-3 col-sm-3 col-xs-6">
+            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          </div>
         </div>
       </div><!--.row.row-orange.row-spacing-->
+
+      <div class="row row-spacing">
+        <div class="container">
+          <h2 id="who">Join the Mailing List</h2>
+          <div class="text-center">
+            <p><a class="btn btn-lg btn-success" href="http://goo.gl/forms/d6yqW2gkkF" target="_blank">Sign Up</a></p>
+            <p>We promise to not spam you (much)!</p>
+          </div>
+        </div>
+      </div><!--.row.row-blue.row-spacing-->
+
+      <div class="row row-blue row-spacing">
+        <div class="container">
+          <h2 id="where">Where Is It?</h2>
+          <p>Currently, we're hoping to hold it in Keene-Flint Hall!</p>
+          <div class="maps-container material-shadow">
+            <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.3582479922866!2d-82.34404999999997!3d29.65137700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3828c70ecb9%3A0xe47ec8e7254ceb3d!2sKeene-Flint+Hall!5e0!3m2!1sen!2sus!4v1421729429904"frameborder="0" style="border:0"></iframe>
+          </div>
+        </div>
+      </div>
 
     </div><!--.main-->
 
     <div class="footer">
       <footer>
         <p class="pull-right">
-          <span class="mdi-editor-insert-emoticon"></span> SwampHacks 2015
+          <strong><span class="mdi-editor-insert-emoticon"></span> SwampHacks 2015
+          </strong>
         </p>
       </footer>
     </div>
