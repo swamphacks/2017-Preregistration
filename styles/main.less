@@ -130,8 +130,7 @@ html {
 	margin: 0 auto;
 }
 
-/*MAPS==========================*/
-
+/*GOOGLE==========================*/
 
 .maps-container {
 	height: @maps-height;
@@ -148,6 +147,22 @@ html {
 #gmaps {
 	width: 100%;
 	height: @maps-height;
+}
+
+.form-container {
+	width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+
+.form-container > iframe {
+	.form-container();
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /*TEXT==========================*/
