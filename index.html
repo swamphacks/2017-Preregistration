@@ -15,12 +15,17 @@
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-material-design/dist/css/ripples.min.css"/>
     <!--end vendor styles-->
 
+    <!--API keys-->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBldxH_l1DA43iPYPU7KEog0k_c3KmWh-A"></script>
+
     <!--client styles-->
     <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
     <!--end client styles-->
   </head>
 
   <body>
+
+    <!--NAVBAR-->
      <div class="navbar-wrapper">
         <nav id="navbar-main" class="navbar navbar-fixed-top" role="navigation">
           <div class="container">
@@ -38,15 +43,15 @@
                 <li><a href="#what">About</a></li>
                 <li><a href="#categories">Categories</a></li>
                 <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#who">Who?</a></li>
-                <li><a href="#where">Where?</a></li>
-                
+                <li><a href="#who">Your Hosts</a></li>
+                <li><a href="#faq">FAQ</a></li>
               </ul>
             </div>
           </div>
       </nav>
     </div>
 
+  <!--HEADLINER-->
     <div class="main">
       <div class="row material-shadow feature-row background-img">
         <div class="black-bg">
@@ -58,6 +63,7 @@
         </div>
       </div><!--.row.feature-row-->
 
+      <!--ABOUT-->
       <div class="row row-spacing">
         <div class="container">
           <h2 id="what">What Is SwampHacks?</h2>
@@ -65,10 +71,44 @@
           <p>
           If you don't have any technical skills, but are bubbling with ideas, scout an attendee to realize your vision. They may not have an idea, yet.
           </p>
+          <p>Currently, we're hoping to hold it in Keene-Flint Hall!</p>
+          <div class="maps-container material-shadow">
+            <div id="gmaps"></div>
+          </div>
         </div>
       </div><!--.row.row-spacing-->
 
+      <!--HACKATHON CATEGORIES-->
       <div class="row row-blue row-spacing">
+        <div class="container">
+          <h2 id="categories">Categories</h2>
+          <div class="text-center">
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div><!--.row.row-blue.row-spacing-->
+
+      <!--MAILING LIST BLURB-->
+      <div class="row row-spacing">
         <div class="container">
           <h2 id="who">Join the Mailing List</h2>
           <div class="text-center">
@@ -76,71 +116,126 @@
             <p>We promise to not spam you (much)!</p>
           </div>
         </div>
-      </div><!--.row.row-blue.row-spacing-->
-
-      <div class="row row-spacing">
-        <div class="container">
-          <h2 id="categories">Categories</h2>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-        </div>
       </div><!--.row.row-spacing-->
 
+      <!--SPONSORS SECTION-->
       <div class="row row-orange row-spacing">
         <div class="container">
           <h2 id="sponsors">Our Sponsors</h2>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          <div class="text-center">
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-6">
+              <a class="img-circle" href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
           </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
-          </div>
-          <div class="col-lg-3 col-sm-3 col-xs-6">
-            <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+          <div class="row row-spacing-top">
+            <p class="text-center">
+              <span class="text-lead">Interested in being a sponsor?</span>
+              Send us an electronic mail at <a href="mailto:swamphacks@gmail.com">swamphacks@gmail.com</a>
+            </p>
           </div>
         </div>
       </div><!--.row.row-orange.row-spacing-->
 
+      <!--HACKATHON HOSTS-->
       <div class="row row-spacing">
         <div class="container">
-          <h2 id="who">Who's Behind It?</h2>
-          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
-            <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
-          </div>
-          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
-            <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
-          </div>
-          <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
-            <img class="img-responsive img-thumbnail" src="http://placehold.it/200x200" alt="host"/>
+          <h2 id="who">Your Hosts</h2>
+          <div class="text-center">
+            <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
+              <a href="http://acm.cise.ufl.edu/" target="_blank">
+                <img class="img-responsive img-thumbnail" src="images/acm_logo.png" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
+              <a href="https://www.facebook.com/uf.wicse" target="_blank">
+                <img class="img-responsive img-thumbnail" src="images/wicse_logo.png" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-11 text-center">
+              <a href="http://ufsdc.github.io/" target="_blank">
+                <img class="img-responsive img-thumbnail" src="images/ufsdc_logo752horizontal.png" alt="host"/>
+              </a>
+            </div>
           </div>
         </div>
       </div><!--.row.row-blue.row-spacing-->
 
+      <!--PRIZES-->
       <div class="row row-blue row-spacing">
         <div class="container">
-          <h2 id="where">Where Is It?</h2>
-          <p>Currently, we're hoping to hold it in Keene-Flint Hall!</p>
-          <div class="maps-container material-shadow">
-            <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.3582479922866!2d-82.34404999999997!3d29.65137700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8a3828c70ecb9%3A0xe47ec8e7254ceb3d!2sKeene-Flint+Hall!5e0!3m2!1sen!2sus!4v1421729429904"frameborder="0" style="border:0"></iframe>
+          <h2 id="what">Prizes</h2>
+          <div class="text-center">
+            <div class="col-lg-4 col-sm-4 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-6">
+              <a href="" target="_blank">
+                <img class="img-responsive img-circle img-thumbnail" src="http://placehold.it/150x150" alt="host"/>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
+      <!--FAQ BLURB-->
+      <div class="row row-spacing">
+        <div class="container">
+          <h2 id="FAQ">FAQ</h2>
+          <p class="text-center"><span class="text-lead">Couldn't find what you were looking for?</span> Check out our FAQ.</p>
+          <div class="text-center">
+            <a href id="faq-btn" class="btn btn-lg btn-info btn-raised"
+            data-toggle="modal" data-target="#long-modal">Open FAQ</a>  
+          </div><!--.text-center-->
+        </div><!--.container-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="long-modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true" style="top: 8%;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modalLabel">Frequently Asked Questions</h4>
+              </div>
+              <div class="modal-body">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div><!--.modal-->
+
+      </div><!--.row.row-blue.row-spacing-->
     </div><!--.main-->
 
+
+    <!--FOOTER--> 
     <div class="footer">
       <footer class="container">
         <p class="pull-right">

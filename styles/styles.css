@@ -13,6 +13,13 @@ html {
   padding-right: 2em;
   max-width: 960px;
 }
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 /*FEATURETTE======================*/
 .background-img {
   background: url('../images/fries.jpg') no-repeat center center;
@@ -20,17 +27,29 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 350px;
+  height: 40em;
   margin: 0;
+}
+.background-img * {
+  color: white;
+}
+.background-img a:hover,
+.background-img a:active {
   color: white;
 }
 .feature-row {
-  height: 350px;
+  height: 40em;
   margin: 0;
+}
+.feature-row * {
+  color: white;
+}
+.feature-row a:hover,
+.feature-row a:active {
   color: white;
 }
 .feature-row h1:first-child {
-  margin-top: 100px;
+  margin-top: 6.66666667em;
 }
 .el-screen {
   opacity: 0.5;
@@ -86,15 +105,31 @@ html {
   margin-right: 0;
 }
 .row-spacing {
+  padding-top: 5.5em;
+  padding-bottom: 7em;
   margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
+}
+.row-spacing-top {
+  padding-top: 1.5em;
 }
 .row-blue {
   background: #2a75f3;
+}
+.row-blue * {
+  color: white;
+}
+.row-blue a:hover,
+.row-blue a:active {
   color: white;
 }
 .row-orange {
   background: #ff4408;
+}
+.row-orange * {
+  color: white;
+}
+.row-orange a:hover,
+.row-orange a:active {
   color: white;
 }
 .auto-margin {
@@ -108,8 +143,9 @@ html {
   border-color: white;
   border-style: solid;
   overflow: hidden;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
+  margin-top: 1.5em;
 }
 #gmaps {
   width: 100%;
@@ -119,8 +155,19 @@ html {
 .title-text {
   font-family: "Norican";
 }
-.white-text {
+.white-text * {
   color: white;
+}
+.white-text a:hover,
+.white-text a:active {
+  color: white;
+}
+.text-lead {
+  font-size: 1.5em;
+}
+/*IMAGES=======================*/
+.img-responsive {
+  margin-bottom: 0.5em;
 }
 /*ANIMATIONS===================*/
 .fade-anim {

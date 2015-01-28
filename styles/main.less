@@ -3,6 +3,7 @@
 @base-blue: #4285f4;
 @base-orange: #ff5722;
 @maps-height: 250px;
+@feature-img-height: 40em;
 
 /*ELEMENTS========================*/
 html {
@@ -20,6 +21,14 @@ html {
 	max-width: 960px;
 }
 
+.modal-open {
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
 /*FEATURETTE======================*/
 .background-img {
 	background: url('../images/fries.jpg') no-repeat center center; 
@@ -32,13 +41,13 @@ html {
 }
 
 .feature-row {
-	height: 350px;
+	height: @feature-img-height;
 	margin: 0;
 	.white-text();
 }
 
 .feature-row h1:first-child {
-	margin-top: 100px;
+	margin-top: @feature-img-height/6;
 }
 
 .el-screen {
@@ -98,8 +107,13 @@ html {
 }
 
 .row-spacing {
-	margin-bottom: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 5.5em;
+	padding-bottom: 7em;
+	margin-bottom: 1.5em;	
+}
+
+.row-spacing-top {
+	padding-top: 1.5em;
 }
 
 .row-blue {
@@ -126,8 +140,9 @@ html {
 	border-color: white;
 	border-style: solid;
 	overflow: hidden;
-	width: 100%;
-	margin: 0 auto;
+	width: 75%;
+	.auto-margin();
+	margin-top: 1.5em;
 }
 
 #gmaps {
@@ -141,7 +156,21 @@ html {
 }
 
 .white-text {
-	color: white;
+	* {
+		color: white;	
+	}
+	a:hover, a:active {
+		color: white;
+	}
+}
+
+.text-lead {
+	font-size: 1.5em;
+}
+
+/*IMAGES=======================*/
+.img-responsive {
+	margin-bottom: 0.5em;
 }
 
 /*ANIMATIONS===================*/
