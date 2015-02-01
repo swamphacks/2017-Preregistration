@@ -49,7 +49,7 @@ html {
   color: white;
 }
 .feature-row h1:first-child {
-  margin-top: 6.66666667em;
+  margin-top: 2.22222222em;
 }
 .el-screen {
   opacity: 0.5;
@@ -61,6 +61,10 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0.75;
+}
+.logo {
+  width: 50%;
+  opacity: 1.0;
 }
 /*NAVBAR======================*/
 #navbar-main {
