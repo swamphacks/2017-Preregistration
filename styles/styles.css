@@ -195,3 +195,7 @@ html {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
 }
+
+.thanks {
+	background-color: #2a75f3;
+}
