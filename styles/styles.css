@@ -199,3 +199,23 @@ html {
 .thanks {
 	background-color: #2a75f3;
 }
+
+.tier1 {
+	width: 70%;
+}
+.tier2 {
+	width: 60%;
+}
+.tier3 {
+	width: 50%;
+}
+.tier4 {
+	width: 40%;
+}
+.tier5 {
+	width: 30%;
+}
+
+.sponsor-logo {
+	margin-bottom: 5em;
+}
