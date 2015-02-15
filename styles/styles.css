@@ -201,16 +201,16 @@ html {
 }
 
 .tier1 {
-	width: 70%;
+	width: 100%;
 }
 .tier2 {
-	width: 60%;
+	width: 100%;
 }
 .tier3 {
-	width: 50%;
+	width: 80%;
 }
 .tier4 {
-	width: 40%;
+	width: 50%;
 }
 .tier5 {
 	width: 30%;
