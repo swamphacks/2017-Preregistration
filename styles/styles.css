@@ -117,7 +117,7 @@ html {
   padding-top: 1.5em;
 }
 .row-blue {
-  background: #2a75f3;
+  background: #396597;
 }
 .row-blue * {
   color: white;
@@ -126,14 +126,14 @@ html {
 .row-blue a:active {
   color: white;
 }
-.row-orange {
-  background: #ff4408;
+.row-green {
+  background: #399754;
 }
-.row-orange * {
+.row-green * {
   color: white;
 }
-.row-orange a:hover,
-.row-orange a:active {
+.row-green a:hover,
+.row-green a:active {
   color: white;
 }
 .auto-margin {
