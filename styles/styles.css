@@ -49,7 +49,7 @@ html {
   color: white;
 }
 .feature-row h1:first-child {
-  margin-top: 6.66666667em;
+  margin-top: 2.22222222em;
 }
 .el-screen {
   opacity: 0.5;
@@ -61,6 +61,10 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0.75;
+}
+.logo {
+  width: 50%;
+  opacity: 1.0;
 }
 /*NAVBAR======================*/
 #navbar-main {
@@ -113,7 +117,7 @@ html {
   padding-top: 1.5em;
 }
 .row-blue {
-  background: #2a75f3;
+  background: #396597;
 }
 .row-blue * {
   color: white;
@@ -122,14 +126,14 @@ html {
 .row-blue a:active {
   color: white;
 }
-.row-orange {
-  background: #ff4408;
+.row-green {
+  background: #399754;
 }
-.row-orange * {
+.row-green * {
   color: white;
 }
-.row-orange a:hover,
-.row-orange a:active {
+.row-green a:hover,
+.row-green a:active {
   color: white;
 }
 .auto-margin {
@@ -190,4 +194,31 @@ html {
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
+}
+
+.thanks {
+	background-color: #2a75f3;
+}
+
+.tier1 {
+	width: 100%;
+}
+.tier2 {
+	width: 100%;
+}
+.tier3 {
+	width: 80%;
+}
+.tier4 {
+	width: 50%;
+}
+.tier5 {
+	width: 30%;
+}
+.tier6 {
+	width: 20%;
+}
+
+.sponsor-logo {
+	margin-bottom: 5em;
 }
