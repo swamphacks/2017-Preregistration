@@ -253,3 +253,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb733', end
 .padding-1 {
     padding: 1em;
 }
+
+hr {
+	width: 60%;
+	background-color: #aaa;
+}
