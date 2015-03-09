@@ -244,3 +244,6 @@ hr {
 	width: 60%;
 	background-color: #aaa;
 }
+.no-overflow-x {
+	overflow-x: inherit;
+}
