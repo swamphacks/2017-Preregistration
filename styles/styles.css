@@ -247,3 +247,7 @@ hr {
 .no-overflow-x {
 	overflow-x: inherit;
 }
+
+.parkinglink {
+  font-size: 120%;
+}
