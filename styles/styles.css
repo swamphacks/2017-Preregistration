@@ -251,3 +251,7 @@ hr {
 .parkinglink {
   font-size: 120%;
 }
+
+.carousel-caption {
+  bottom: -5%;
+}
