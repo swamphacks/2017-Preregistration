@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <title>SwampHacks - A UF Hackathon</title>
     <meta charset='utf-8'>
@@ -11,7 +11,7 @@
       href="images/favicon.ico"/>
 
     <!--vendor styles-->
-
+    <link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="css/bootstrap.min.css" />
     <!--end vendor styles-->
 
     <!--client styles-->
@@ -19,18 +19,34 @@
     <!--end client styles-->
   </head>
 
-  <body>
+  <body ng-controller="MainCtrl">
 
-    <center>
-      <img class="logo" src="images/translogo.png">
-      <h2>Coming Soon</h2>
-    </center>
+
+    <div class="container col-sm-6 col-sm-offset-3 col-xs-12">
+      <div class="header text-center">
+        <img class="logo" src="images/translogo.png">
+
+        <h3>Stay Connected...</h3>
+
+
+      </div>
+      <div class="input-group col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-2">
+         <input type="text" class="form-control" placeholder="Enter your Email" ng-model="newEmail">
+         <span class="input-group-btn">
+              <button class="btn btn-default" type="button" ng-click="addEmail()">Subscribe!</button>
+         </span>
+      </div>
+
+    </div>
+
     <!--vendor scripts-->
-
+    <script src="js/jquery-2.1.4.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.3.5" src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <!--end vendor scripts-->
 
     <!--client scripts-->
-
+    <script src="js/script.js"></script>
     <!--end client scripts-->
   </body>
 </html>
