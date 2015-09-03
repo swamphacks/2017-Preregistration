@@ -16,6 +16,7 @@
 
     <!--client styles-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/input.css"/>
     <!--end client styles-->
   </head>
 
@@ -24,20 +25,25 @@
 
     <div class="container col-sm-6 col-sm-offset-3 col-xs-12">
       <div class="header text-center">
-        <img class="logo" src="images/translogo.png">
+        <img class="logo" src="images/translogo.png" />
 
-        <h3>Stay Connected...</h3>
+        <div class="login">
+          <div class="heading">
+            <h2>Stay Connected...</h2>
+            <form action="#">
+              <div class="input-group input-group-lg">
+                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
 
+              <button type="submit" class="float">Subscribe</button>
+           </form>
+        	</div>
+         </div>
 
-      </div>
-      <div class="input-group col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-2">
-         <input type="text" class="form-control" placeholder="Enter your Email" ng-model="newEmail">
-         <span class="input-group-btn">
-              <button class="btn btn-default" type="button" ng-click="addEmail()">Subscribe!</button>
-         </span>
-      </div>
 
     </div>
+
 
     <!--vendor scripts-->
     <script src="js/jquery-2.1.4.js"></script>
