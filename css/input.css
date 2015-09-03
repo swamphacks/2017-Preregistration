@@ -52,7 +52,7 @@ body, input, button {
   font-size: 1.6em;
   width: 100%;
   background: transparent;
-  color: #c2b8b1;
+  color: #3A6EBA;
 }
 .login form input.form-control:focus {
   border: none;
