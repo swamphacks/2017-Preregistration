@@ -1,6 +1,6 @@
 .header{
   position:absolute;
-  top:50%;
+  top:82%;
   text-align:center;
   width:100%;
   color:#fff;
@@ -17,4 +17,18 @@
   background-size:cover;
   position:relative;
   height:100vh;
+}
+/*
+pre-register blue rgb(58, 109, 186);
+green rgb(22, 178, 109)
+*/
+
+.input-group {
+  padding: 20px;
+  background-color: rgb(58, 109, 186);
+  border: 1px rgb(48, 119, 186) solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+.email-text {
+  color: black;
 }
