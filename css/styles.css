@@ -13,7 +13,7 @@
 
 
 #header-image {
-  background: url(../images/bgi2048-03.svg) left center no-repeat;
+  background: url(../images/bgi2048-03.svg) center center no-repeat;
   background-size:cover;
   position:relative;
   height:100vh;
