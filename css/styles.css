@@ -1,7 +1,20 @@
-body {
-  background-color: #e3e3e3 !important;
+.header{
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);
+
 }
 
-.logo {
-  max-width: 500px;
+
+#header-image {
+  background: url(../images/bgi2048-01.svg) left center no-repeat;
+  background-size:cover;
+  position:relative;
+  height:100vh;
 }
