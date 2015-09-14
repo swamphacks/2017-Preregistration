@@ -21,17 +21,30 @@
   </head>
 <body>
   <div id="header-image">
-    <div class="header">
+    <div class="header" ng-controller="MainCtrl">
       <h1>Coming Soon</h1>
-      <!--
+
+
+
+
+
       <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-12">
-        <div class="input-group">
+        <form action="//swamphacks.us10.list-manage.com/subscribe/post?u=44a52d9dbedc78feec6c91b97&amp;id=aa577777f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+            <button class="btn-lg btn-primary" type="button" ng-click="clicked = true" ng-hide="clicked">Stay in touch</button>
+            <input ng-show="clicked" type="text" class="form-control email-text" placeholder="Enter your email" ame="EMAIL" class="required email" id="mce-EMAIL" ng-model="newEmail">
+            <input ng-show="clicked" class="btn-lg btn-success" type="submit" d="mc-embedded-subscribe">
+
+          </form>
+
+
+<!--         <div class="input-group">
           <input type="text" class="form-control email-text" placeholder="Search for...">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">Pre-Register</button>
           </span>
-        </div>
-      --><!-- /input-group -->
+        </div> -->
+
       </div>
     </div>
   </div>
