@@ -12,43 +12,45 @@
 	<!--end vendor stylesheet-->
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
-<body id="lp">
+<body id="lp" ng-controller="mainCtrl">
 
 	<div id="bg-wrapper">
-		<div id="wrapper">
-			<div class="container-fluid" ng-controller="MainCtrl">
-				<div id="main" class="row text-center">
-					<div class="col-md-12">
-					<a href="http://swamphacks.com/" title="SwampHacks"><img class="lp-logo" src="images/swamphacks_gator_head.png" title="SwampHacks Logo"/></a>
-					<h1 class="lp-header">swamp<span class="lp-header-latter">hacks</span></h1>
-					<!--<h2 class="lp-subheader">University of Florida | January 23 - 24, 2016</h2>-->
-					<img class="hidden-lp-banner" src="images/banner-image.png" title="University of Florida | January 23 - 24, 2015"/>
-					<div class="banner">
-						<div class="line">
-							<span>University of Florida</span>
-						</div>
-						<div class="line">
-							<span>January 23 - 24, 2015</span>
-						</div>
+		<div class="container-fluid" >
+			<div id="main" class="row text-center">
+				<div class="col-md-12">
+				<a href="http://swamphacks.com/" title="SwampHacks"><img class="lp-logo" src="images/swamphacks_gator_head.png" title="SwampHacks Logo"/></a>
+				<h1 class="lp-header">swamp<span class="lp-header-latter">hacks</span></h1>
+				<img class="hidden-lp-banner" src="images/banner-image.png" title="University of Florida | January 23 - 24, 2015"/>
+				<div class="banner">
+					<div class="line">
+						<span>University of Florida</span>
 					</div>
-					<button class="flat-pr" type="button" ng-click="opened=true" ng-hide="opened">Keep Me Updated</button>
+					<div class="line">
+						<span>January 23 - 24, 2015</span>
 					</div>
 				</div>
-				<div id="secondary" class="row">
-					<div class="col-md-4 col-md-offset-4">
-					<form action="//swamphacks.us10.list-manage.com/subscribe/post?u=44a52d9dbedc78feec6c91b97&amp;id=aa577777f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<input ng-show="opened" type="email" class="form-control email-text" placeholder="coolperson@example.com" name="EMAIL" class="required email" id="mce-EMAIL" ng-model="newEmail"/>
-						<div class="row">
-							<div class="col-md-6">
-								<input ng-show="opened" class="subs-but" type="submit" d="mc-embedded-subscribe" value="Update me!"/>
-							</div>
-							<div class="col-md-6">
-								<div ng-show="opened" class="nvm-but" ng-click="opened=false">Wait, never mind..</div>
-							</div>
-						</div>
-					</form>
-					</div>
+				<button class="flat-pr" type="button" ng-click="openForm=true" ng-hide="openForm">Keep Me Updated</button>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-lightbox" ng-show="openForm">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form action="//swamphacks.us10.list-manage.com/subscribe/post?u=44a52d9dbedc78feec6c91b97&amp;id=aa577777f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<span class="email-spam-notice-m">Don't worry, we're not into that whole "spam" thing.</span>
+					<p class="email-field-ask">What's your email address?</p>
+					<span class="email-spam-notice">Don't worry, we're not into that whole "spam you 'till you block us" thing.</span>
+					<input id="mce-EMAIL" class="form-control email-input-line"  name="EMAIL" type="email" placeholder="coolperson@example.com" ng-model="newEmail" autofocus/>
+					<div class="row form-action-row">
+						<div class="col-md-6 text-center">
+							<input type="submit" d="mc-embedded-subscribe" value="Submit" class="subs-but"/>
+						</div>
+						<div class="col-md-6 text-center">
+							<div class="canc-but" ng-click="openForm=false">Cancel</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,8 @@
 var myApp = angular.module('app', []);
+// Need to include angular-animate.js script in order for ngAnimate module dependence below to be met
+//var myApp = angular.module('app', ['ngAnimate']);
 
-myApp.controller('MainCtrl', function ($scope){
-//  $scope.newEmail = "";
-  $scope.opened = false;
-  console.log(1);
-
+myApp.controller('mainCtrl', function ($scope){
+	$scope.openForm = false;
+	//console.log(1);
 });
