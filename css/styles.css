@@ -188,7 +188,7 @@ body#lp {
 	font-family: 'Amble-Regular';
 }
 
-.email-input-line {
+.email-input-line, .email-input-line:active, .email-input-line:focus {
 	color: #222;
 	font-size: 48px;
 	line-height: 54px;
@@ -196,7 +196,7 @@ body#lp {
 	height: 78px;
 	background: none;
 	border: none;
-	border-bottom: 3px solid #666;
+	border-bottom: 2px dotted #DDD !important;
 	box-shadow: none;
 	border-radius: 0;
 	padding: 0;
@@ -245,7 +245,7 @@ body#lp {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	width: 120px;
+	width: 150px;
 	margin: 5px auto;
 	padding: 14px 22px;
 	background: none;
