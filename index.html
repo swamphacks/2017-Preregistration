@@ -14,23 +14,21 @@
 </head>
 <body id="lp" ng-controller="mainCtrl">
 
-	<div id="bg-wrapper">
-		<div class="container-fluid" >
-			<div id="main" class="row text-center">
-				<div class="col-md-12">
-				<a href="http://swamphacks.com/" title="SwampHacks"><img class="lp-logo" src="images/swamphacks_gator_head.png" title="SwampHacks Logo"/></a>
-				<h1 class="lp-header">swamp<span class="lp-header-latter">hacks</span></h1>
-				<img class="hidden-lp-banner" src="images/banner-image.png" title="University of Florida | January 23 - 24, 2015"/>
-				<div class="banner">
-					<div class="line">
-						<span>University of Florida</span>
-					</div>
-					<div class="line">
-						<span>January 23 - 24, 2015</span>
-					</div>
+	<div class="container-fluid" >
+		<div id="main" class="row text-center">
+			<div class="col-md-12">
+			<a href="http://swamphacks.com/" title="SwampHacks"><img class="lp-logo" src="images/swamphacks_gator_head.png" title="SwampHacks Logo"/></a>
+			<h1 class="lp-header">swamp<span class="lp-header-latter">hacks</span></h1>
+			<img class="hidden-lp-banner" src="images/banner-image.png" title="University of Florida | January 23 - 24, 2015"/>
+			<div class="banner">
+				<div class="line">
+					<span>University of Florida</span>
 				</div>
-				<button class="flat-pr" type="button" ng-click="openForm=true" ng-hide="openForm">Keep Me Updated</button>
+				<div class="line">
+					<span>January 23 - 24, 2015</span>
 				</div>
+			</div>
+			<button class="flat-pr" type="button" ng-click="openForm=true" ng-hide="openForm">Keep Me Updated</button>
 			</div>
 		</div>
 	</div>
@@ -44,7 +42,7 @@
 					<input id="mce-EMAIL" class="form-control email-input-line"  name="EMAIL" type="email" placeholder="coolperson@example.com" ng-model="newEmail" autofocus/>
 					<div class="row form-action-row">
 						<div class="col-md-6 text-center">
-							<input type="submit" d="mc-embedded-subscribe" value="Subscribe" class="subs-but"/>
+							<input type="submit" d="mc-embedded-subscribe" value="Submit" class="subs-but"/>
 						</div>
 						<div class="col-md-6 text-center">
 							<div class="canc-but" ng-click="openForm=false">Cancel</div>
@@ -54,6 +52,7 @@
 			</div>
 		</div>
 	</div>
+	
 
 	<!--vendor scripts-->
 	<script src="js/jquery-2.1.4.js"></script>

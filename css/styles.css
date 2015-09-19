@@ -28,23 +28,14 @@
 }
 
 body#lp {
-	height: 100%;
-}
-
-#bg-wrapper {
-	position: fixed;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	background-image: url(../images/bg-no-logo-temp.png);
-	background-position: center center;
-	background-repeat: no-repeat;
+	background: url('../images/bg-no-logo-temp.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-}
-
-#main {
-	margin-top: 70px;
+	padding: 50px 0 60px 0;
+	width: auto !important;
+	overflow-x: hidden !important;
 }
 
 .hidden-lp-banner {
