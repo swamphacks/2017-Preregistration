@@ -1,8 +1,16 @@
-var myApp = angular.module('app', []);
-// Need to include angular-animate.js script in order for ngAnimate module dependence below to be met
-//var myApp = angular.module('app', ['ngAnimate']);
+/** Custom JavaScript for SwampHacks Landing Page **/
 
-myApp.controller('mainCtrl', function ($scope){
-	$scope.openForm = false;
-	//console.log(1);
-});
+// Get Browser Type
+var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+//var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+//var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+if ((is_chrome)&&(is_safari)) {is_safari=false;}
+//if ((is_chrome)&&(is_opera)) {is_chrome=false;}
+
+// If browser is Safari or Internet Explorer, replace the CSS banner with an image replica
+if(is_safari || is_explorer) {
+	$('.banner').css("display", "none");
+	$('.hidden-lp-banner').css("display", "block");
+}

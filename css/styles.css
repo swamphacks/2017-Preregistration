@@ -27,15 +27,17 @@
 	src: url('../fonts/inconsolata/Inconsolata.otf');
 }
 
-body#lp {
+html {
 	background: url('../images/bg-no-logo-temp.png') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+body#lp {
+	background: none;
 	padding: 50px 0 60px 0;
-	width: auto !important;
-	overflow-x: hidden !important;
 }
 
 .hidden-lp-banner {
@@ -43,7 +45,8 @@ body#lp {
 	max-width: 500px;
 	width: 100%;
 	height: auto;
-	margin: 80px 0;
+	margin: 80px auto;
+	text-align: center;
 }
 
 .lp-logo {
@@ -135,27 +138,11 @@ body#lp {
 	font-family: 'Oswald', 'Helvetica Neue', Helvetica;
 }
 
-#form-lightbox {
-	position: fixed;
-	height: 100%;
-	overflow-y: scroll;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+#formLightBox {
 	background: rgba(255, 255, 255, 0.95);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	z-index: 2;
-	-webkit-transition: all linear 0.3s;
-	-moz-transition: all linear 0.3s;
-	-o-transition: all linear 0.3s;
-	transition: all linear 0.3s;
 }
 
-#form-lightbox form {
+#formLightBox form {
 	padding: 80px 40px;
 }
 
@@ -214,6 +201,7 @@ body#lp {
 }
 
 .flat-pr {
+	display: block;
 	color: #fff;
 	font-size: 24px;
 	line-height: 32px;
@@ -226,6 +214,8 @@ body#lp {
 	border: none;
 	border-bottom: 3px solid #2980b9;
 	border-radius: 0;
+	text-align: center;
+	margin: auto;
 	-moz-transition: background-color 0.3s, font-size 0.3s;
 	-o-transition: background-color 0.3s, font-size 0.3s;
 	-webkit-transition: background-color 0.3s, font-size 0.3s;

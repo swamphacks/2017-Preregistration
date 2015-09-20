@@ -28,11 +28,12 @@
 					<span>January 23 - 24, 2015</span>
 				</div>
 			</div>
-			<button class="flat-pr" type="button" ng-click="openForm=true" ng-hide="openForm">Keep Me Updated</button>
+			<button class="flat-pr" type="button" data-toggle="modal" data-target="#formLightBox">Keep Me Updated</button>
 			</div>
 		</div>
 	</div>
-	<div id="form-lightbox" ng-show="openForm">
+
+	<div class="modal fade" id="formLightBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
 				<form action="//swamphacks.us10.list-manage.com/subscribe/post?u=44a52d9dbedc78feec6c91b97&amp;id=aa577777f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -45,14 +46,13 @@
 							<input type="submit" d="mc-embedded-subscribe" value="Subscribe" class="subs-but"/>
 						</div>
 						<div class="col-md-6 text-center">
-							<div class="canc-but" ng-click="openForm=false">Cancel</div>
+							<button class="canc-but" data-dismiss="modal">Cancel</button>
 						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
 
 	<!--vendor scripts-->
 	<script src="js/jquery-2.1.4.js"></script>
