@@ -14,3 +14,9 @@ if(is_safari || is_explorer) {
 	$('.banner').css("display", "none");
 	$('.hidden-lp-banner').css("display", "block");
 }
+
+// Remove "preload" class from body upon page load
+// This prevents elements from resizing immediately upon page load
+$(window).load(function() {
+  $("body").removeClass("preload");
+});

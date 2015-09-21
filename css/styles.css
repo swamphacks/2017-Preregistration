@@ -27,16 +27,26 @@
 	src: url('../fonts/inconsolata/Inconsolata.otf');
 }
 
-html {
-	background: url('../images/bg-no-logo-temp.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+.bg-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	background-image: url('../images/bg-no-logo-temp.png');
+	background-position: center center;
 	background-size: cover;
 }
 
-body#lp {
-	background: none;
+#main {
 	padding: 50px 0 60px 0;
 }
 
@@ -59,7 +69,7 @@ body#lp {
 .lp-header {
 	color: #3a6dba;
 	font-size: 64px;
-	margin: 0 0 10px 0;
+	margin: 0;
 	font-family: 'Amble-Light';
 	-moz-transition: font-size 0.3s;
 	-o-transition: font-size 0.3s;
@@ -76,7 +86,7 @@ body#lp {
 .banner {
 	position: relative;
 	z-index: 1;
-	margin: 80px auto;
+	margin: 65px auto 80px auto;
 	width: 500px;
 }
 
@@ -302,7 +312,7 @@ body#lp {
 }
 
 @media screen and (max-width: 530px) {
-	body#lp .banner {
+	.banner {
 		display: none;
 	}
 	.hidden-lp-banner {
