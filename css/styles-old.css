@@ -34,103 +34,21 @@
 	-o-transition: none !important;
 }
 
-h2 {
-	font-family: 'Amble-Light';
-	text-transform: uppercase;
-	font-style: italic;
-	font-size: 2.66em;
-	letter-spacing: 0.06em;
-	text-align: center;
-}
-
-h3 {
-	font-family: 'Amble-Regular';
-	font-size: 2em;
-	letter-spacing: 0.06em;
-}
-
-p {
-	font-family: 'Quicksand-Light';
-	font-size: 1.66em;
-	letter-spacing: 0.03em;
-
-}
-
-section {
-	width: 100%;
-	display: block;
-	position: relative;
-}
-
-.splash {
-	height: 100vh;
+.bg-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
 	background-image: url('../images/bg-no-logo-temp.png');
 	background-position: center center;
 	background-size: cover;
-	padding: 50px;
 }
 
-
-.about {
-	background-color: #3bbc62;
-	padding-top: 40px;
-	padding-bottom: 318px;
+#main {
+	padding: 50px 0 60px 0;
 }
-
-
-/** ONLY TEMPORARY UNTIL BG SWITCH **/
-.about {
-	margin-top: -150px;
-}
-/** END TEMPORARY STYLE **/
-
-
-.about h2 {
-	color: #fff;
-	margin-bottom: 30px;
-}
-
-.about p {
-	color: #fff;
-	margin-bottom: 90px;
-}
-
-.about .marston-ceiling {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	max-height: 300px;
-}
-
-.faq {
-	background-color: #fffcd7;
-}
-
-.faq h2, .faq h3, .faq p {
-	color: #396cbb;
-}
-
-.faq h2 {
-	margin-top: 60px;
-	margin-bottom: 45px;
-}
-
-.faq p {
-	margin-bottom: 30px;
-}
-
-.faq p#last {
-	margin-bottom: 90px;
-}
-
-.faq .marston-rooms {
-	position: absolute;
-	width: 100%;
-}
-
-
-
 
 .hidden-lp-banner {
 	display: none;
