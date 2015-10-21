@@ -1,6 +1,11 @@
-/** BEGIN: Landing Page Styling **/
+/*
+*
+* SwampHacks Homepage
+* Last Updated: October 21, 2015
+*
+*/
 
-@import url(http://fonts.googleapis.com/css?family=Oswald:400);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 @font-face {
 	font-family: 'Amble-Light';
@@ -17,16 +22,6 @@
 	src: url('../fonts/amble/Amble-Bold.ttf');
 }
 
-@font-face {
-	font-family: 'Quicksand-Light';
-	src: url('../fonts/quicksand/Quicksand-Light.otf');
-}
-
-@font-face {
-	font-family: 'Inconsolata';
-	src: url('../fonts/inconsolata/Inconsolata.otf');
-}
-
 .preload * {
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
@@ -38,21 +33,18 @@ h2 {
 	font-family: 'Amble-Light';
 	text-transform: uppercase;
 	font-style: italic;
-	font-size: 2.66em;
-	letter-spacing: 0.06em;
+	font-size: 50px;
 	text-align: center;
 }
 
 h3 {
 	font-family: 'Amble-Regular';
-	font-size: 2em;
-	letter-spacing: 0.06em;
+	font-size: 32px;
 }
 
 p {
-	font-family: 'Quicksand-Light';
-	font-size: 1.66em;
-	letter-spacing: 0.03em;
+	font-family: 'Lato', sans-serif;
+	font-size: 26px;
 
 }
 
@@ -64,26 +56,17 @@ section {
 
 .splash {
 	height: 100vh;
-	background-image: url('../images/bg-no-logo-temp.png');
-	background-position: center center;
+	background-image: url('../images/splash.jpg');
+	background-position: center bottom;
 	background-size: cover;
-	padding: 50px;
+	padding: 20px 50px 50px 50px;
 }
-
 
 .about {
 	background-color: #3bbc62;
 	padding-top: 40px;
 	padding-bottom: 318px;
 }
-
-
-/** ONLY TEMPORARY UNTIL BG SWITCH **/
-.about {
-	margin-top: -150px;
-}
-/** END TEMPORARY STYLE **/
-
 
 .about h2 {
 	color: #fff;
@@ -108,7 +91,7 @@ section {
 }
 
 .faq h2, .faq h3, .faq p {
-	color: #396cbb;
+	color: #386dba;
 }
 
 .faq h2 {
@@ -129,19 +112,9 @@ section {
 	width: 100%;
 }
 
-
-
-
-.hidden-lp-banner {
-	display: none;
-	max-width: 500px;
-	width: 100%;
-	height: auto;
-	margin: 80px auto;
-	text-align: center;
-}
-
 .lp-logo {
+	max-height: 200px;
+	width: auto;
 	-moz-transition: width 0.3s;
 	-o-transition: width 0.3s;
 	-webkit-transition: width 0.3s;
@@ -149,85 +122,16 @@ section {
 }
 
 .lp-header {
-	color: #3a6dba;
-	font-size: 64px;
+	color: #3a3a3a;
+	font-size: 32px;
 	margin: 0;
-	font-family: 'Amble-Light';
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	font-style: normal;
 	-moz-transition: font-size 0.3s;
 	-o-transition: font-size 0.3s;
 	-webkit-transition: font-size 0.3s;
 	transition: font-size 0.3s;
-}
-
-.lp-header-latter {
-	color: #222222;
-	font-family: 'Amble-Regular';
-	font-weight: 600;
-}
-
-.banner {
-	position: relative;
-	z-index: 1;
-	margin: 65px auto 80px auto;
-	width: 500px;
-}
-
-.banner .line {
-	margin: 0 0 10px;
-	width: 100%;
-	height: 78px;
-	box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 3em;
-	line-height: 78px;
-	transform: skew(0, 0deg);
-}
-
-.banner .line:after,
-.banner .line:first-child:before {
-	position: absolute;
-	top: 44px;
-	left: 0;
-	z-index: -1;
-	display: block;
-	width: 500px;
-	height: 78px;
-	border-radius: 4px;
-	background: #2e8347;
-	content: '';
-	transform: skew(0, 10deg);
-}
-
-.banner .line:first-child:before {
-	top: -10px;
-	right: 0;
-	left: auto;
-}
-
-.banner .line:first-child:before,
-.banner .line:last-child:after {
-	width: 0;
-	height: 0;
-	border-width: 38px;
-	border-style: solid;
-	border-color: #2e8347 #2e8347 transparent transparent;
-	background: transparent;
-}
-
-.banner .line:last-child:after {
-	top: 12px;
-	border-color: transparent transparent #2e8347 #2e8347;
-}
-
-.banner span {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border-radius: 4px;
-	background: #42bb67;
-	color: #fff;
-	font-family: 'Oswald', 'Helvetica Neue', Helvetica;
 }
 
 #formLightBox {
@@ -307,7 +211,7 @@ section {
 	border-bottom: 3px solid #2980b9;
 	border-radius: 0;
 	text-align: center;
-	margin: auto;
+	margin: 60px auto;
 	-moz-transition: background-color 0.3s, font-size 0.3s;
 	-o-transition: background-color 0.3s, font-size 0.3s;
 	-webkit-transition: background-color 0.3s, font-size 0.3s;
