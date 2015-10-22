@@ -1,11 +1,13 @@
 /*
 *
-* SwampHacks Homepage
+* SwampHacks Homepage Stylesheet
 * Last Updated: October 21, 2015
 *
 */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
+/** Import Fonts **/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 @font-face {
 	font-family: 'Amble-Light';
@@ -21,6 +23,8 @@
 	font-family: 'Amble-Bold';
 	src: url('../fonts/amble/Amble-Bold.ttf');
 }
+
+/** Basic Formatting **/
 
 .preload * {
 	-webkit-transition: none !important;
@@ -44,6 +48,7 @@ h3 {
 
 p {
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 26px;
 
 }
@@ -54,78 +59,20 @@ section {
 	position: relative;
 }
 
-.splash {
-	height: 100vh;
-	background-image: url('../images/splash.jpg');
-	background-position: center bottom;
-	background-size: cover;
-	padding: 20px 50px 50px 50px;
-}
+/** Logo and Header **/
 
-.about {
-	background-color: #3bbc62;
-	padding-top: 40px;
-	padding-bottom: 318px;
-}
-
-.about h2 {
-	color: #fff;
-	margin-bottom: 30px;
-}
-
-.about p {
-	color: #fff;
-	margin-bottom: 90px;
-}
-
-.about .marston-ceiling {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	max-height: 300px;
-}
-
-.faq {
-	background-color: #fffcd7;
-}
-
-.faq h2, .faq h3, .faq p {
-	color: #386dba;
-}
-
-.faq h2 {
-	margin-top: 60px;
-	margin-bottom: 45px;
-}
-
-.faq p {
-	margin-bottom: 30px;
-}
-
-.faq p#last {
-	margin-bottom: 90px;
-}
-
-.faq .marston-rooms {
-	position: absolute;
-	width: 100%;
-}
-
-.lp-logo {
+#sh-logo {
 	max-height: 200px;
 	width: auto;
-	-moz-transition: width 0.3s;
-	-o-transition: width 0.3s;
-	-webkit-transition: width 0.3s;
-	transition: width 0.3s;
+	margin: auto;
 }
 
-.lp-header {
+#sh-header {
 	color: #3a3a3a;
 	font-size: 32px;
 	margin: 0;
 	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	text-transform: none;
 	font-style: normal;
 	-moz-transition: font-size 0.3s;
@@ -133,6 +80,125 @@ section {
 	-webkit-transition: font-size 0.3s;
 	transition: font-size 0.3s;
 }
+
+/** Menu Formatting **/
+
+section#menu .navbar {
+	background-color: #3a6dba;
+	border-bottom: 3px solid #315d9f;
+	padding: 0 20px;
+}
+
+section#menu .navbar-brand {
+	padding: 7px 10px;
+}
+
+section#menu .navbar-brand img {
+	height: 34px;
+	width: auto;
+}
+
+section#menu .navbar a {
+	font-family: 'Amble-Regular', sans-serif;
+	color: #fff;
+	font-size: 18px;
+}
+
+section#menu .navbar a.apps {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+section#menu .navbar-default .navbar-nav > .active > a, section#menu .navbar-default .navbar-nav > .active > a:focus, section#menu .navbar-default .navbar-nav > .active > a:hover {
+	color: #fff;
+	background: none;
+	border-bottom: 2px solid #fff;
+}
+
+section#menu .navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+
+section#menu .navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+section#menu .navbar-default .navbar-toggle:focus, section#menu .navbar-default .navbar-toggle:hover {
+	background-color: #fff;
+}
+
+section#menu .navbar-default .navbar-toggle:focus .icon-bar, section#menu .navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #3a6dba;
+}
+
+/** Splash Section Formatting **/
+
+section#splash {
+	height: 100vh;
+	background-image: url('../images/splash.jpg');
+	background-position: center bottom;
+	background-size: cover;
+	padding: 20px 50px 50px 50px;
+}
+
+/** About Section Formatting **/
+
+section#about {
+	background-color: #3bbc62;
+}
+
+section#about h2 {
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+section#about p {
+	color: #fff;
+	margin-bottom: 90px;
+}
+
+section#about img.marston-ceiling {
+	position: relative;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	max-height: 300px;
+}
+
+/** FAQ Section Formatting **/
+
+section#faq {
+	background-color: #fffcd7;
+}
+
+section#faq .col-md-6 {
+	padding: 0 40px;
+}
+
+section#faq h2, section#faq h3, section#faq p {
+	color: #386dba;
+}
+
+section#faq h2 {
+	margin-top: 60px;
+	margin-bottom: 45px;
+}
+
+section#faq p {
+	margin-bottom: 30px;
+}
+
+section#faq p#last {
+	margin-bottom: 90px;
+}
+
+section#faq img.marston-rooms {
+	position: absolute;
+	width: 100%;
+}
+
+/** Subscribe Form **/
 
 #formLightBox {
 	background: rgba(255, 255, 255, 0.95);
@@ -283,26 +349,8 @@ section {
 }
 
 @media screen and (max-width: 415px) {
-	.lp-logo {
-		width: 225px;
-	}
-	.lp-header {
-		font-size: 48px;
-	}
 	.flat-pr {
 		font-size: 18px;
-	}
-	.hidden-lp-banner {
-		margin: 50px 0 60px 0;
-	}
-}
-
-@media screen and (max-width: 530px) {
-	.banner {
-		display: none;
-	}
-	.hidden-lp-banner {
-		display: block;
 	}
 }
 
@@ -322,6 +370,12 @@ section {
 		font-size: 20px !important;
 		line-height: 24px !important;
 		height: 45px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section#menu .navbar a {
+		text-align: center;
 	}
 }
 
