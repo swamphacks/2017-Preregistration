@@ -1,7 +1,7 @@
 /*
 *
 * SwampHacks Homepage Stylesheet
-* Last Updated: October 21, 2015
+* Last Updated: October 23, 2015
 *
 */
 
@@ -37,7 +37,7 @@ h2 {
 	font-family: 'Amble-Light';
 	text-transform: uppercase;
 	font-style: italic;
-	font-size: 50px;
+	font-size: 42px;
 	text-align: center;
 }
 
@@ -171,7 +171,6 @@ section#about img.marston-ceiling {
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	max-height: 250px;
 }
 
 /** FAQ Section Formatting **/
@@ -181,7 +180,7 @@ section#faq {
 }
 
 section#faq .col-md-6 {
-	padding: 0 40px;
+	padding: 0 70px;
 }
 
 section#faq h2, section#faq h3, section#faq p {
@@ -304,6 +303,10 @@ section#faq img.marston-rooms {
 	top: 3px;
 }
 
+#splash .flat-pr {
+	margin-top: 40vh;
+}
+
 .subs-but {
 	color: #444;
 	font-size: 18px;
@@ -356,8 +359,15 @@ section#faq img.marston-rooms {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 380px) {
+	#splash .flat-pr {
+		margin-top: 20vh;
+		padding: 12px 24px;
+	}
+}
+
 @media screen and (max-width: 415px) {
-	.flat-pr {
+	#splash .flat-pr {
 		font-size: 18px;
 	}
 }
@@ -393,5 +403,3 @@ section#faq img.marston-rooms {
 		line-height: 48px;
 	}
 }
-
-/**  END: Landing Page Styling  **/

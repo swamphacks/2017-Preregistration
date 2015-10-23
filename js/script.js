@@ -1,7 +1,7 @@
 /*
 *
 * SwampHacks Homepage JavaScript
-* Last Updated: October 21, 2015
+* Last Updated: October 22, 2015
 *
 */
 
