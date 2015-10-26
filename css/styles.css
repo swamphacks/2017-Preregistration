@@ -402,6 +402,12 @@ section#bottomlink h2{
 	}
 }
 
+@media screen and (max-width: 585px) {
+	section#about p {
+		padding: 0 20px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	section#menu .navbar a {
 		text-align: center;
