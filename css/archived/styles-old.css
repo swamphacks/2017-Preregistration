@@ -1,13 +1,6 @@
-/*
-*
-* SwampHacks Homepage Stylesheet
-* Last Updated: October 21, 2015
-*
-*/
+/** BEGIN: Landing Page Styling **/
 
-/** Import Fonts **/
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url(http://fonts.googleapis.com/css?family=Oswald:400);
 
 @font-face {
 	font-family: 'Amble-Light';
@@ -24,7 +17,15 @@
 	src: url('../fonts/amble/Amble-Bold.ttf');
 }
 
-/** Basic Formatting **/
+@font-face {
+	font-family: 'Quicksand-Light';
+	src: url('../fonts/quicksand/Quicksand-Light.otf');
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('../fonts/inconsolata/Inconsolata.otf');
+}
 
 .preload * {
 	-webkit-transition: none !important;
@@ -33,201 +34,119 @@
 	-o-transition: none !important;
 }
 
-h2 {
-	font-family: 'Amble-Regular';
-	text-transform: uppercase;
-	font-style: italic;
-	font-size: 40px;
+.bg-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	background-image: url('../images/bg-no-logo-temp.png');
+	background-position: center center;
+	background-size: cover;
+}
+
+#main {
+	padding: 50px 0 60px 0;
+}
+
+.hidden-lp-banner {
+	display: none;
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
 	text-align: center;
 }
 
-h3 {
-	font-family: 'Amble-Regular';
-	font-size: 28px;
+.lp-logo {
+	-moz-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	-webkit-transition: width 0.3s;
+	transition: width 0.3s;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 20px;
-
-}
-
-section {
-	width: 100%;
-	display: block;
-	position: relative;
-}
-
-/** Logo and Header **/
-
-#sh-logo {
-	max-height: 120px;
-	width: auto;
-	margin: auto;
-}
-
-#sh-header {
-	color: #3a3a3a;
-	font-size: 24px;
+.lp-header {
+	color: #3a6dba;
+	font-size: 64px;
 	margin: 0;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	text-transform: none;
-	font-style: normal;
+	font-family: 'Amble-Light';
 	-moz-transition: font-size 0.3s;
 	-o-transition: font-size 0.3s;
 	-webkit-transition: font-size 0.3s;
 	transition: font-size 0.3s;
 }
 
-.contrast {
-	background-color: rgba(255,255,255,0.8);
-	padding: 5px 10px;
-	line-height: 49px;
-	-webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
+.lp-header-latter {
+	color: #222222;
+	font-family: 'Amble-Regular';
+	font-weight: 600;
 }
 
-/** Menu Formatting **/
-
-section#menu .navbar {
-	background-color: #3a6dba;
-	border-bottom: 3px solid #315d9f;
-	padding: 0 20px;
+.banner {
+	position: relative;
+	z-index: 1;
+	margin: 65px auto 80px auto;
+	width: 500px;
 }
 
-section#menu .navbar-brand {
-	padding: 7px 10px;
-}
-
-section#menu .navbar-brand img {
-	height: 34px;
-	width: auto;
-}
-
-section#menu .navbar a {
-	font-family: 'Amble-Regular', sans-serif;
-	color: #fff;
-	font-size: 18px;
-}
-
-section#menu .navbar a.apps {
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-section#menu .navbar-default .navbar-nav > .active > a, section#menu .navbar-default .navbar-nav > .active > a:focus, section#menu .navbar-default .navbar-nav > .active > a:hover {
-	color: #fff;
-	background: none;
-	border-bottom: 2px solid #fff;
-}
-
-section#menu .navbar-default .navbar-toggle {
-	border-color: #fff;
-}
-
-section#menu .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
-}
-
-section#menu .navbar-default .navbar-toggle:focus, section#menu .navbar-default .navbar-toggle:hover {
-	background-color: #fff;
-}
-
-section#menu .navbar-default .navbar-toggle:focus .icon-bar, section#menu .navbar-default .navbar-toggle:hover .icon-bar {
-	background-color: #3a6dba;
-}
-
-/** Splash Section Formatting **/
-
-section#splash {
-	height: 100vh;
-	background-image: url('../images/splash.jpg');
-	background-position: center bottom;
-	background-size: cover;
-	padding: 20px 50px 50px 50px;
-}
-
-/** About Section Formatting **/
-
-section#about {
-	background-color: #3bbc62;
-}
-
-section#about h2 {
-	color: #fff;
-	margin-top: 0;
-	font-size: 30px;
-	font-family: "Amble-Light";
-	font-style: normal;
-	margin-bottom: 7px;
-	margin-top: 20px;
-}
-
-section#about p {
-	color: white;
-	margin-bottom: 90px;
-	padding: 0px 125px 0px;
+.banner .line {
+	margin: 0 0 10px;
+	width: 100%;
+	height: 78px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 78px;
+	transform: skew(0, 0deg);
 }
 
-section#about img.marston-ceiling {
-	position: relative;
-	width: 100%;
+.banner .line:after,
+.banner .line:first-child:before {
+	position: absolute;
+	top: 44px;
 	left: 0;
-	bottom: 0;
-	/*max-height: 500px;*/
+	z-index: -1;
+	display: block;
+	width: 500px;
+	height: 78px;
+	border-radius: 4px;
+	background: #2e8347;
+	content: '';
+	transform: skew(0, 10deg);
 }
 
-/** FAQ Section Formatting **/
-
-section#faq {
-	background-color: #fffcd7;
+.banner .line:first-child:before {
+	top: -10px;
+	right: 0;
+	left: auto;
 }
 
-section#faq .col-md-6 {
-	padding: 0 40px;
+.banner .line:first-child:before,
+.banner .line:last-child:after {
+	width: 0;
+	height: 0;
+	border-width: 38px;
+	border-style: solid;
+	border-color: #2e8347 #2e8347 transparent transparent;
+	background: transparent;
 }
 
-section#faq h2, section#faq h3, section#faq p {
-	color: #386dba;
+.banner .line:last-child:after {
+	top: 12px;
+	border-color: transparent transparent #2e8347 #2e8347;
 }
 
-section#faq h2 {
-	font-style: normal;
-	margin-top: 60px;
-	margin-bottom: 45px;
-}
-
-section#faq p {
-	margin-bottom: 30px;
-}
-
-section#faq p#last {
-	margin-bottom: 90px;
-}
-
-section#faq img.marston-rooms {
-	position: relative;
+.banner span {
+	display: block;
 	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: #42bb67;
+	color: #fff;
+	font-family: 'Oswald', 'Helvetica Neue', Helvetica;
 }
-
-/** Link Section Formatting**/
-/*section#bottomlink{
-		background-color: #6B768E;
-}
-
-section#bottomlink .col-md-6 {
-
-}
-
-section#bottomlink h2{
-	margin-top: 100px;
-}*/
-
-
-/** Subscribe Form **/
 
 #formLightBox {
 	background: rgba(255, 255, 255, 0.95);
@@ -294,7 +213,7 @@ section#bottomlink h2{
 .flat-pr {
 	display: block;
 	color: #fff;
-	font-size: 22px;
+	font-size: 24px;
 	line-height: 32px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -306,7 +225,7 @@ section#bottomlink h2{
 	border-bottom: 3px solid #2980b9;
 	border-radius: 0;
 	text-align: center;
-	margin: 275px auto auto auto;
+	margin: auto;
 	-moz-transition: background-color 0.3s, font-size 0.3s;
 	-o-transition: background-color 0.3s, font-size 0.3s;
 	-webkit-transition: background-color 0.3s, font-size 0.3s;
@@ -378,8 +297,26 @@ section#bottomlink h2{
 }
 
 @media screen and (max-width: 415px) {
+	.lp-logo {
+		width: 225px;
+	}
+	.lp-header {
+		font-size: 48px;
+	}
 	.flat-pr {
 		font-size: 18px;
+	}
+	.hidden-lp-banner {
+		margin: 50px 0 60px 0;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.banner {
+		display: none;
+	}
+	.hidden-lp-banner {
+		display: block;
 	}
 }
 
@@ -399,12 +336,6 @@ section#bottomlink h2{
 		font-size: 20px !important;
 		line-height: 24px !important;
 		height: 45px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	section#menu .navbar a {
-		text-align: center;
 	}
 }
 

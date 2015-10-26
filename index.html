@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>SwampHacks - A UF Hackathon</title>
+	<title>SwampHacks - A University of Florida Hackathon</title>
 	<meta charset='utf-8'>
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="description" content="The official site for SwampHacks, the UF hackathon.">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" type="image/png" href="images/favicon.ico"/>
-	<!--vendor stylesheet-->
 	<link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="css/bootstrap.min.css" />
-	<!--end vendor stylesheet-->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body class="preload">
 
-	<div class="bg-wrapper">
+	<section id="menu">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="images/menu-bar-sh-logo.png" title="SwampHacks Menu Bar Logo">
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a class="apps" href="#" data-toggle="modal" data-target="#formLightBox">Apply</a></li>
+						<li><a class="apps" href="mailto:&#115;&#112;&#111;&#110;&#115;&#111;&#114;&#115;&#064;&#115;&#119;&#097;&#109;&#112;&#104;&#097;&#099;&#107;&#115;&#046;&#099;&#111;&#109;">Sponsor</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="icons" href="https://www.facebook.com/SwampHacks" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="icons" href="https://twitter.com/swamphacks" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="icons" href="mailto:&#105;&#110;&#102;&#111;&#064;&#115;&#119;&#097;&#109;&#112;&#104;&#097;&#099;&#107;&#115;&#046;&#099;&#111;&#109;"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<section id="splash">
 		<div class="container">
-			<div id="main" class="row">
-				<div class="col-md-12 text-center">
-					<a href="http://swamphacks.com/" title="SwampHacks"><img class="lp-logo" src="images/swamphacks_gator_head.png" title="SwampHacks Logo"/></a>
-					<h1 class="lp-header">swamp<span class="lp-header-latter">hacks</span></h1>
-					<img class="hidden-lp-banner" src="images/banner-image.png" title="University of Florida | January 23 - 24, 2016"/>
-					<div class="banner">
-						<div class="line">
-							<span>University of Florida</span>
-						</div>
-						<div class="line">
-							<span>January 23 - 24, 2016</span>
-						</div>
-					</div>
-					<button class="flat-pr" type="button" data-toggle="modal" data-target="#formLightBox">Keep Me Updated</button>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1><a href="http://swamphacks.com/" title="SwampHacks"><img id="sh-logo" class="img-responsive" src="images/swamphacks-logo.png" title="SwampHacks Logo"/></a></h1>
+				<h2 id="sh-header">University of Florida | January 23 - 24, 2016</h2>
+				<button class="flat-pr" type="button" data-toggle="modal" data-target="#formLightBox">Pre-register</button>
 				</div>
 			</div>
 		</div>
-	</div>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h2>Welcome to the Swamp</h2>
+					<p>SwampHacks will see 400 hackers from all over the country congregate to Gainesville, FL for a 24-hour software development marathon. Become a part of one of the largest hackathons in the South.</p>
+				</div>
+			</div>
+		</div>
+		<img class="marston-ceiling" src="images/marston-ceiling-n.jpg">
+	</section>
+
+	<section id="faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>FAQs</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>What is SwampHacks?</h3>
+					<p>SwampHacks is a 24-hour hackathon (read: software development marathon) that is intended to bring makers of all experience levels together for a weekend to create some amazing things: grab some friends, cook up a crazy idea, and do everything in your power to make it a reality.</p>
+					<p>Throughout the weekend, we'll have mountains of swag, corporate sponsors looking to recruit, and more free food than you could possible imagine. Aside from that - participation is completely FREE! No, we're not kidding.</p>
+					<h3>Can I hack with a team?</h3>
+					<p>Absolutely! Rome wasn't built in a day and it certainly wasn't built by one person: teams get things done! Meet other hackers, network, and make a #squad of your own. Teambuilding will be an informal process, so feel free to either walk in to the event with a team or join one once we get kicked off. Maximum 5 hackers per team.</p>
+					<h3>How do I get there?</h3>
+					<p>We'll be chartering buses as we get closer to the event so they can pick up students from nearby schools. Bus not coming to your school? No worries. We're working on a plan for group travel reimbursements. If you want to come to SwampHacks, we'll try our best to get you here.</p>
+				</div>
+				<div class="col-md-6">
+					<h3>What do I bring?</h3>
+					<p>Every hacker has their own kit. We recommend hacking gear (laptop, charger, USB peripherals), a light jacket in case it gets cold, and some basic hygiene products (toothbrush/toothpaste, deodorant, etc) to keep you feeling fresh.</p>
+					<h3>How much experience do I need?</h3>
+					<p>NONE! ZERO! NADA! At the end of the day, it's the people that make a hackathon great. Whether you've been coding since you were 6 or you've never written a line of HTML in your life, everyone has something to gain from a hackathon. Think about this: even if you're new to programming, you have 24 hours to learn a new skill and demonstrate it with a product. Pretty cool, right?</p>
+					<h3>Can I submit an older project?</h3>
+					<p>Out of fairness to the other competitors, we ask that no code dedicated to the project can have been written before the beginning of the event. Resurfacing a year-old project for a 24-hour competition just doesn't make a whole lot of sense.</p>
+				</div>
+			</div>
+		</div>
+		<img class="marston-rooms" src="images/marston-rooms-l.jpg">
+	</section>
+
+	<!-- <section id="bottomlink">
+		<div class = "container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Made with heart</h2>
+	</section> -->
 
 	<div class="modal fade" id="formLightBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="row">
@@ -56,11 +125,9 @@
 		</div>
 	</div>
 
-	<!--vendor scripts-->
 	<script src="js/jquery-2.1.4.js"></script>
 	<script data-require="bootstrap@*" data-semver="3.3.5" src="js/bootstrap.min.js"></script>
 	<script src="js/angular.min.js"></script>
-	<!--end vendor scripts-->
 	<script src="js/script.js"></script>
 </body>
 </html>
