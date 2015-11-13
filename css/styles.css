@@ -294,6 +294,7 @@ section#bottomlink h2{
 .flat-pr {
 	display: block;
 	color: #fff;
+	text-decoration: none;
 	font-size: 22px;
 	line-height: 32px;
 	font-weight: 600;
@@ -321,11 +322,15 @@ section#bottomlink h2{
 }
 
 .flat-pr:hover {
+	color: #fff;
+	text-decoration: none;
 	background-color: #4fa3db;
 	border-bottom-color: #2980b9;
 }
 
 .flat-pr:active {
+	color: #fff;
+	text-decoration: none;
 	border: none;
 	background-color: #4fa3db;
 	position: relative;
