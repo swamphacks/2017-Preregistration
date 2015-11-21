@@ -391,7 +391,7 @@ section#bottomlink h2{
 	text-align: center !important;
 	outline: none !important;
 	margin: 10px auto;
-	width: 240px;
+	width: 241px;
 	-moz-transition: background-color 0.3s, font-size 0.3s;
 	-o-transition: background-color 0.3s, font-size 0.3s;
 	-webkit-transition: background-color 0.3s, font-size 0.3s;
@@ -502,12 +502,28 @@ section#bottomlink h2{
 	section#about p {
 		padding: 0 20px;
 	}
+	.flat-pr {
+		width: 100%;
+	}
+	section#about img.marston-ceiling {
+		position: relative;
+		width: 200%;
+		left: -50%;
+		bottom: 0;
+	}
+	section#faq img.marston-rooms {
+		position: relative;
+		width: 200%;
+		left: -35%;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
 	section#menu .navbar a {
 		text-align: center;
 	}
+
 }
 
 @media screen and (max-width: 992px) {
