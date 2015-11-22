@@ -1,7 +1,7 @@
 /*
 *
 * SwampHacks Homepage Stylesheet
-* Last Updated: October 21, 2015
+* Last Updated: November 21, 2015
 *
 */
 
@@ -146,9 +146,14 @@ section#splash {
 	background-image: url('../images/SplashScreenTop_SplashScreen.jpg');
 	background-position: center top;
 	background-size: cover;
-	padding: 5px 50px 50px 50px;
+	padding: 20px 50px 100px 50px;
+	/*margin-bottom: 100%;*/
 }
 
+#heading {
+	display: block;
+	text-align: center;
+}
 /** About Section Formatting **/
 
 section#about {
@@ -213,18 +218,22 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
-/*@media (min-width:1281px){
-	#Links {
-		margin-top: -300px;
-		margin-bottom: 180px;
-	}
-}*/
-
 section#footer {
 	font-family: 'Amble-Regular', sans-serif;
 	background-color: #6B768E;
+	border-top: 2px solid #667187;
+	margin-top: -3px;
+	padding: 10px 0;
 	color: white;
 	text-align: right;
+}
+
+section#footer #contributors {
+	text-align: right;
+}
+
+section#footer #links {
+	text-align: left;
 }
 
 section#footer li {
@@ -249,11 +258,11 @@ section#footer i:hover {
 }
 
 .heart {
-	margin-left: 0px;
-  color: white;
-  font-size: 12px;
+	margin: 0 0 20px 0;
+	color: white;
+	font-size: 12px;
 	display: block;
-  text-align: center;
+	text-align: center;
 	vertical-align: bottom;
 }
 .heart i {
@@ -282,7 +291,7 @@ section#footer i:hover {
 #whiteLogo {
 	color: white;
 	display: block;
-	margin: 20px auto 10px auto;
+	margin: 20px auto 0 auto;
 	width: 150px;
 }
 
@@ -366,7 +375,7 @@ section#bottomlink h2{
 
 .flat-pr {
 	display: block;
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 	font-size: 22px;
 	line-height: 32px;
@@ -379,8 +388,8 @@ section#bottomlink h2{
 	border: none;
 	border-bottom: 3px solid #2A5593;
 	border-radius: 0;
-	text-align: center;
-
+	text-align: center !important;
+	outline: none !important;
 	margin: 10px auto;
 	width: 241px;
 	-moz-transition: background-color 0.3s, font-size 0.3s;
@@ -406,7 +415,7 @@ section#bottomlink h2{
 .flat-pr:active {
 	color: #fff;
 	text-decoration: none;
-	border: none;
+	outline: none !important;
 	background-color: #4fa3db;
 	position: relative;
 	top: 3px;
@@ -493,10 +502,32 @@ section#bottomlink h2{
 	section#about p {
 		padding: 0 20px;
 	}
+	.flat-pr {
+		width: 100%;
+	}
+	section#about img.marston-ceiling {
+		position: relative;
+		width: 200%;
+		left: -50%;
+		bottom: 0;
+	}
+	section#faq img.marston-rooms {
+		position: relative;
+		width: 200%;
+		left: -35%;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
 	section#menu .navbar a {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+	section#footer #contributors, section#footer #links {
 		text-align: center;
 	}
 }
@@ -506,6 +537,16 @@ section#bottomlink h2{
 		font-size: 40px;
 		line-height: 48px;
 	}
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #2054A0;
+	text-decoration: none;
 }
 
 /**  END: Landing Page Styling  **/
