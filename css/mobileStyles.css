@@ -68,7 +68,7 @@ section {
 }
 
 #sh-header {
-	color: #3a3a3a;
+	color: red;
 	font-size: 20px;
 	margin: 0 auto 200px auto;
 	font-family: 'Lato', sans-serif;
@@ -213,13 +213,6 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
-/*@media (min-width:1281px){
-	#Links {
-		margin-top: -300px;
-		margin-bottom: 180px;
-	}
-}*/
-
 section#footer {
 	font-family: 'Amble-Regular', sans-serif;
 	background-color: #6B768E;
@@ -233,7 +226,7 @@ section#footer li {
 	margin-bottom: 4px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 14px;
 
 }
 
@@ -282,7 +275,7 @@ section#footer i:hover {
 #whiteLogo {
 	color: white;
 	display: block;
-	margin: 20px auto 10px auto;
+	margin: 40px auto 20px auto;
 	width: 150px;
 }
 
