@@ -530,6 +530,9 @@ section#bottomlink h2{
 	section#footer #contributors, section#footer #links {
 		text-align: center;
 	}
+	section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}
 }
 
 @media screen and (max-width: 1425px) {
