@@ -223,6 +223,34 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
+/** Sponsors Section Formatting **/
+
+section#sponsors-ceiling {
+	height: 100%;
+	background-image: url('../images/devils-den-ceiling.png');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*padding: 400px 50px 1200px 50px;*/
+	/*This padding bottom of 100% works better*/
+	padding-bottom: 100%;
+	background-color: #EADD92;
+}
+section#sponsors-floor {
+	height: 100%;
+	background-image: url('../images/devils-den-floor.png');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	/*padding: 100px 500px 500px 500px;*/
+	padding-bottom: 375px;
+}
+
+/** END Sponsors Section Formatting **/
+
 section#footer {
 	font-family: 'Amble-Regular', sans-serif;
 	background-color: #6B768E;
