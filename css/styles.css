@@ -273,8 +273,12 @@ section#sponsors-floor {
 
 section#footer {
 	font-family: 'Amble-Regular', sans-serif;
+	/*
 	background-color: #6B768E;
-	border-top: 2px solid #667187;
+	border-top: 2px solid #667187;*/
+	/*Change BG colors to match devils den pool, old ones are above*/
+	background-color: #D6C476;
+	border-top: 2px solid #D6C476;
 	margin-top: -3px;
 	padding: 10px 0;
 	color: white;
