@@ -227,16 +227,35 @@ section#faq img.marston-rooms {
 
 section#sponsors-ceiling {
 	height: 100%;
-	background-image: url('../images/devils-den-ceiling.png');
+	background-image: url('../images/devils-den-ceiling-no-logos.jpg');
 	background-position: center top;
 	/*contain scaled it to fit properly*/
 	background-size: contain;
 	background-repeat: no-repeat;
 	/*padding: 400px 50px 1200px 50px;*/
-	/*This padding bottom of 100% works better*/
-	padding-bottom: 100%;
+	/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+	/*padding-bottom: 100%;*/
 	background-color: #EADD92;
 }
+section#sponsors-ceiling .sponsor-container {
+	padding-top: 50%;
+}
+section#sponsors-ceiling .sponsor-title {
+	color: #323F0F;
+	letter-spacing: .1em;
+	font-size: 42px;
+	font-weight: 500;
+}
+section#sponsors-ceiling .sponsor-logo-row {
+	margin-top: 10%;
+}
+
+section#sponsors-ceiling .sponsor-image {
+	max-height: 120px;
+	width: auto;
+	margin: auto;
+}
+
 section#sponsors-floor {
 	height: 100%;
 	background-image: url('../images/devils-den-floor.png');
@@ -247,6 +266,7 @@ section#sponsors-floor {
 	width: 100%;
 	/*padding: 100px 500px 500px 500px;*/
 	padding-bottom: 375px;
+	background-color: #EADD92;
 }
 
 /** END Sponsors Section Formatting **/
