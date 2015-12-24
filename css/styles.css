@@ -246,8 +246,10 @@ section#sponsors-ceiling .sponsor-container {
 }
 
 section#sponsors-ceiling h2 {
+	padding-top: 5%;
 	color: #323F0F;
 	font-style: normal;
+	margin-bottom: 10%;
 	/*margin-top: 60px;*/
 	/*margin-bottom: 45px;*/
 }
@@ -271,6 +273,8 @@ section#sponsors-ceiling .sponsor-image-sm {
 }
 
 .sponsor-image-lg, .sponsor-image-md, .sponsor-image-sm {
+	top: 50%;
+transform: 			translateY(-50%);
 	padding-bottom: 5%;
 	width: auto;
 	margin: auto;
@@ -588,7 +592,7 @@ section#bottomlink h2{
 	.flat-pr {
 		width: 100%;
 	}
-/*	section#about img.marston-ceiling {
+	/*section#about img.marston-ceiling {
 		position: relative;
 		width: 200%;
 		left: -50%;
