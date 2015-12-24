@@ -287,14 +287,14 @@ transform: 			translateY(-50%);
 
 section#sponsors-floor {
 	height: 100%;
-	background-image: url('../images/devils-den-floor.png');
+	background-image: url('../images/devils-den-floor.jpg');
 	background-position: center top;
 	/*contain scaled it to fit properly*/
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
 	/*margin top provides spacing b/w last sponsor row and pool*/
-	/*margin-top: 8%;*/
+	margin-top: -3%;
 	padding-bottom: 30%;
 	background-color: #D6C476;
 }
@@ -309,10 +309,11 @@ section#footer {
 	/*Change BG colors to match devils den pool, old ones are above*/
 	background-color: #D6C476;
 	border-top: 2px solid #D6C476;
-	margin-top: -3px;
+	margin-top: -4%;
 	padding: 10px 0;
 	color: white;
 	text-align: right;
+	/*margin-bottom: 10px;*/
 }
 
 section#footer #contributors {
