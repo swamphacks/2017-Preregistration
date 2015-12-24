@@ -249,7 +249,7 @@ section#sponsors-ceiling h2 {
 	padding-top: 5%;
 	color: #323F0F;
 	font-style: normal;
-	margin-bottom: 10%;
+	margin-bottom: 8%;
 	/*margin-top: 60px;*/
 	/*margin-bottom: 45px;*/
 }
@@ -294,7 +294,7 @@ section#sponsors-floor {
 	background-repeat: no-repeat;
 	width: 100%;
 	/*margin top provides spacing b/w last sponsor row and pool*/
-	margin-top: 8%;
+	/*margin-top: 8%;*/
 	padding-bottom: 30%;
 	background-color: #D6C476;
 }
