@@ -225,6 +225,10 @@ section#faq img.marston-rooms {
 
 /** Sponsors Section Formatting **/
 
+.sponsors {
+	background-color: #EADD92;
+}
+
 section#sponsors-ceiling {
 	height: 100%;
 	background-image: url('../images/WebDesign-14.jpg');
@@ -244,16 +248,13 @@ section#sponsors-ceiling .sponsor-container {
 section#sponsors-ceiling h2 {
 	color: #323F0F;
 	font-style: normal;
-	margin-top: 60px;
-	margin-bottom: 45px;
+	/*margin-top: 60px;*/
+	/*margin-bottom: 45px;*/
 }
 
-/*section#sponsors-ceiling .sponsor-title {
-	color: #323F0F;
-	letter-spacing: .1em;
-	font-size: 42px;
-	font-weight: 500;
-}*/
+section#sponsors-ceiling .sponsor-title {
+	margin-top: 10%;
+}
 section#sponsors-ceiling .sponsor-logo-row {
 	margin-top: 5%;
 	padding: 0 20px;
@@ -288,6 +289,8 @@ section#sponsors-floor {
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
+	/*margin top provides spacing b/w last sponsor row and pool*/
+	margin-top: 8%;
 	padding-bottom: 30%;
 	background-color: #D6C476;
 }
