@@ -313,7 +313,7 @@ section#footer {
 	padding: 10px 0;
 	color: white;
 	text-align: right;
-	/*margin-bottom: 10px;*/
+	padding-bottom: 2%;
 }
 
 section#footer #contributors {
