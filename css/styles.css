@@ -223,14 +223,97 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
+/** Sponsors Section Formatting **/
+
+.sponsors {
+	background-color: #EADD92;
+}
+
+section#sponsors-ceiling {
+	height: 100%;
+	background-image: url('../images/WebDesign-14.jpg');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*padding: 400px 50px 1200px 50px;*/
+	/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+	/*padding-bottom: 100%;*/
+	background-color: #EADD92;
+}
+section#sponsors-ceiling .sponsor-container {
+	padding-top: 35%;
+}
+
+section#sponsors-ceiling h2 {
+	padding-top: 5%;
+	color: #323F0F;
+	font-style: normal;
+	margin-bottom: 8%;
+	/*margin-top: 60px;*/
+	/*margin-bottom: 45px;*/
+}
+
+section#sponsors-ceiling .sponsor-title {
+	margin-top: 10%;
+}
+section#sponsors-ceiling .sponsor-logo-row {
+	margin-top: 5%;
+	padding: 0 20px;
+}
+
+section#sponsors-ceiling .sponsor-image-lg {
+	max-height: 180px;
+}
+section#sponsors-ceiling .sponsor-image-md {
+	max-height: 150px;
+}
+section#sponsors-ceiling .sponsor-image-sm {
+	max-height: 65px;
+}
+
+.sponsor-image-lg, .sponsor-image-md, .sponsor-image-sm {
+	top: 50%;
+transform: 			translateY(-50%);
+	padding-bottom: 5%;
+	width: auto;
+	margin: auto;
+	-webkit-filter: brightness(0);
+}
+
+.sponsor-image-lg:hover, .sponsor-image-md:hover, .sponsor-image-sm:hover{
+	-webkit-filter: brightness(0) invert(1);
+}
+
+section#sponsors-floor {
+	height: 100%;
+	background-image: url('../images/devils-den-floor.jpg');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	/*margin top provides spacing b/w last sponsor row and pool*/
+	margin-top: -3%;
+	padding-bottom: 30%;
+	background-color: #D6C476;
+}
+
+/** END Sponsors Section Formatting **/
+
 section#footer {
 	font-family: 'Amble-Regular', sans-serif;
+	/*
 	background-color: #6B768E;
-	border-top: 2px solid #667187;
-	margin-top: -3px;
+	border-top: 2px solid #667187;*/
+	/*Change BG colors to match devils den pool, old ones are above*/
+	background-color: #D6C476;
+	border-top: 2px solid #D6C476;
+	margin-top: -4%;
 	padding: 10px 0;
 	color: white;
 	text-align: right;
+	padding-bottom: 2%;
 }
 
 section#footer #contributors {
@@ -510,7 +593,7 @@ section#bottomlink h2{
 	.flat-pr {
 		width: 100%;
 	}
-/*	section#about img.marston-ceiling {
+	/*section#about img.marston-ceiling {
 		position: relative;
 		width: 200%;
 		left: -50%;
