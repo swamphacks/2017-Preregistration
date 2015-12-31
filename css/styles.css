@@ -262,15 +262,7 @@ section#sponsors-ceiling .sponsor-logo-row {
 	padding: 0 20px;
 }
 
-section#sponsors-ceiling .sponsor-image-lg {
-	max-height: 180px;
-}
-section#sponsors-ceiling .sponsor-image-md {
-	max-height: 150px;
-}
-section#sponsors-ceiling .sponsor-image-sm {
-	max-height: 65px;
-}
+
 
 .sponsor-image-lg, .sponsor-image-md, .sponsor-image-sm {
 	top: 50%;
@@ -283,6 +275,17 @@ transform: 			translateY(-50%);
 
 .sponsor-image-lg:hover, .sponsor-image-md:hover, .sponsor-image-sm:hover{
 	-webkit-filter: brightness(0) invert(1);
+}
+
+section#sponsors-ceiling .sponsor-image-lg {
+	max-height: 180px;
+	padding-bottom: 0%;
+}
+section#sponsors-ceiling .sponsor-image-md {
+	max-height: 150px;
+}
+section#sponsors-ceiling .sponsor-image-sm {
+	max-height: 65px;
 }
 
 section#sponsors-floor {
