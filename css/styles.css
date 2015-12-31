@@ -270,7 +270,7 @@ transform: 			translateY(-50%);
 	padding-bottom: 5%;
 	width: auto;
 	margin: auto;
-	-webkit-filter: brightness(0);
+	/*-webkit-filter: brightness(0);*/
 }
 
 .sponsor-image-lg:hover, .sponsor-image-md:hover, .sponsor-image-sm:hover{
