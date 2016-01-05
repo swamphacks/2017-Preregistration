@@ -1,0 +1,349 @@
+/** BEGIN: Landing Page Styling **/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400);
+
+@font-face {
+	font-family: 'Amble-Light';
+	src: url('../fonts/amble/Amble-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Amble-Regular';
+	src: url('../fonts/amble/Amble-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Amble-Bold';
+	src: url('../fonts/amble/Amble-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Quicksand-Light';
+	src: url('../fonts/quicksand/Quicksand-Light.otf');
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('../fonts/inconsolata/Inconsolata.otf');
+}
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
+
+.bg-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow-y: auto;
+	background-image: url('../images/bg-no-logo-temp.png');
+	background-position: center center;
+	background-size: cover;
+}
+
+#main {
+	padding: 50px 0 60px 0;
+}
+
+.hidden-lp-banner {
+	display: none;
+	max-width: 500px;
+	width: 100%;
+	height: auto;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.lp-logo {
+	-moz-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	-webkit-transition: width 0.3s;
+	transition: width 0.3s;
+}
+
+.lp-header {
+	color: #3a6dba;
+	font-size: 64px;
+	margin: 0;
+	font-family: 'Amble-Light';
+	-moz-transition: font-size 0.3s;
+	-o-transition: font-size 0.3s;
+	-webkit-transition: font-size 0.3s;
+	transition: font-size 0.3s;
+}
+
+.lp-header-latter {
+	color: #222222;
+	font-family: 'Amble-Regular';
+	font-weight: 600;
+}
+
+.banner {
+	position: relative;
+	z-index: 1;
+	margin: 65px auto 80px auto;
+	width: 500px;
+}
+
+.banner .line {
+	margin: 0 0 10px;
+	width: 100%;
+	height: 78px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3em;
+	line-height: 78px;
+	transform: skew(0, 0deg);
+}
+
+.banner .line:after,
+.banner .line:first-child:before {
+	position: absolute;
+	top: 44px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 500px;
+	height: 78px;
+	border-radius: 4px;
+	background: #2e8347;
+	content: '';
+	transform: skew(0, 10deg);
+}
+
+.banner .line:first-child:before {
+	top: -10px;
+	right: 0;
+	left: auto;
+}
+
+.banner .line:first-child:before,
+.banner .line:last-child:after {
+	width: 0;
+	height: 0;
+	border-width: 38px;
+	border-style: solid;
+	border-color: #2e8347 #2e8347 transparent transparent;
+	background: transparent;
+}
+
+.banner .line:last-child:after {
+	top: 12px;
+	border-color: transparent transparent #2e8347 #2e8347;
+}
+
+.banner span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background: #42bb67;
+	color: #fff;
+	font-family: 'Oswald', 'Helvetica Neue', Helvetica;
+}
+
+#formLightBox {
+	background: rgba(255, 255, 255, 0.95);
+}
+
+#formLightBox form {
+	padding: 80px 40px;
+}
+
+.form-action-row {
+	margin: 50px 0;
+}
+
+.email-field-ask {
+	color: #444;
+	font-size: 48px;
+	line-height: 54px;
+	font-family: 'Amble-Bold';
+	margin-bottom: 0;
+	-moz-transition: font-size 0.3s, line-height 0.3s;
+	-o-transition: font-size 0.3s, line-height 0.3s;
+	-webkit-transition: font-size 0.3s, line-height 0.3s;
+	transition: font-size 0.3s, line-height 0.3s;
+}
+
+.email-spam-notice {
+	color: #666;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: 'Amble-Regular';
+}
+
+.email-spam-notice-m {
+	display: none;
+	color: #666;
+	font-size: 14px;
+	line-height: 14px;
+	font-family: 'Amble-Regular';
+}
+
+.email-input-line {
+	color: #222;
+	font-size: 48px;
+	line-height: 54px;
+	font-family: 'Amble-Regular';
+	height: 78px;
+	background: none;
+	border: none;
+	border-bottom: 2px dotted #DDD !important;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 0;
+	margin-top: 20px;
+	-moz-transition: font-size 0.3s, line-height 0.3s;
+	-o-transition: font-size 0.3s, line-height 0.3s;
+	-webkit-transition: font-size 0.3s, line-height 0.3s;
+	transition: font-size 0.3s, line-height 0.3s;
+}
+
+.email-input-line:focus {
+	box-shadow: none;
+}
+
+.flat-pr {
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Amble-Bold';
+	letter-spacing: 2px;
+	padding: 16px 32px;
+	background-color: #3498db;
+	border: none;
+	border-bottom: 3px solid #2980b9;
+	border-radius: 0;
+	text-align: center;
+	margin: auto;
+	-moz-transition: background-color 0.3s, font-size 0.3s;
+	-o-transition: background-color 0.3s, font-size 0.3s;
+	-webkit-transition: background-color 0.3s, font-size 0.3s;
+	transition: background-color 0.3s, font-size 0.3s
+}
+
+.flat-pr:hover {
+	background-color: #4fa3db;
+	border-bottom-color: #2980b9;
+}
+
+.flat-pr:active {
+	border: none;
+	background-color: #4fa3db;
+	position: relative;
+	top: 3px;
+}
+
+.subs-but {
+	color: #444;
+	font-size: 18px;
+	font-family: 'Amble-Bold';
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 150px;
+	margin: 5px auto;
+	padding: 14px 22px;
+	background: none;
+	border: 2px solid #666;
+	border-radius: 3px;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+.subs-but:hover, .subs-but:active {
+	color: #fff;
+	border-color: #58cc89;
+	background-color: #58cc89;
+	cursor: pointer;
+}
+
+.canc-but {
+	color: #444;
+	font-size: 18px;
+	font-family: 'Amble-Bold';
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 150px;
+	margin: 5px auto;
+	padding: 14px 22px;
+	background: none;
+	border: 2px solid #666;
+	border-radius: 3px;
+	-moz-transition: background-color 0.3s;
+	-o-transition: background-color 0.3s;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+.canc-but:hover, .canc-but:active {
+	color: #fff;
+	border-color: #e74c3c;
+	background-color: #e74c3c;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 415px) {
+	.lp-logo {
+		width: 225px;
+	}
+	.lp-header {
+		font-size: 48px;
+	}
+	.flat-pr {
+		font-size: 18px;
+	}
+	.hidden-lp-banner {
+		margin: 50px 0 60px 0;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.banner {
+		display: none;
+	}
+	.hidden-lp-banner {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.email-field-ask {
+		text-align: center;
+	}
+	.email-spam-notice {
+		display: none;
+	}
+	.email-spam-notice-m {
+		display: block;
+		text-align: center;
+	}
+	.email-input-line {
+		text-align: center;
+		font-size: 20px !important;
+		line-height: 24px !important;
+		height: 45px;
+	}
+}
+
+@media screen and (max-width: 1425px) {
+	.email-field-ask, .email-input-line {
+		font-size: 40px;
+		line-height: 48px;
+	}
+}
+
+/**  END: Landing Page Styling  **/
