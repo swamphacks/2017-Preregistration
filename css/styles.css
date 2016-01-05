@@ -223,6 +223,42 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
+/*Schedule Section Formatting*/
+
+
+section#schedule  {
+	background-color: #6B768E;
+}
+
+section#schedule  .col-md-6 {
+	padding: 0 80px;
+}
+
+section#schedule h2, section#schedule h3, section#schedule h4, section#schedule p {
+	color: white;
+}
+
+section#schedule  h2 {
+	font-style: normal;
+	margin-top: 60px;
+	margin-bottom: 45px;
+}
+
+section#schedule  p {
+	float: left;
+	 margin-top: 10px;
+	 font-size: 20px;
+}
+
+section#schedule h4 {
+	float: right;
+	    text-align: right;
+	    font-size: 22px;
+
+}
+
+
+
 /** Sponsors Section Formatting **/
 
 .sponsors {
