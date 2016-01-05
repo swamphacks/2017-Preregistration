@@ -225,14 +225,21 @@ section#faq img.marston-rooms {
 
 /*Schedule Section Formatting*/
 
+section#schedule .row-content {
+
+	margin: 0 100px;
+}
 
 section#schedule  {
 	background-color: #6B768E;
+	padding-bottom: 140px;
+	/*padding: 0 90px;*/
 }
 
 section#schedule  .col-md-6 {
-	padding: 0 80px;
+	padding: 0 40px;
 }
+
 
 section#schedule h2, section#schedule h3, section#schedule h4, section#schedule p {
 	color: white;
@@ -242,18 +249,22 @@ section#schedule  h2 {
 	font-style: normal;
 	margin-top: 60px;
 	margin-bottom: 45px;
+	margin-left: -40px;
 }
 
 section#schedule  p {
-	float: left;
+	float: right;
+
 	 margin-top: 10px;
-	 font-size: 20px;
+	 font-size: 16px;
+	 margin-right: 20px;
 }
 
 section#schedule h4 {
-	float: right;
-	    text-align: right;
-	    font-size: 22px;
+	float: left;
+	    text-align: left;
+	    font-size:20px;
+			margin-left: 20px;
 
 }
 
