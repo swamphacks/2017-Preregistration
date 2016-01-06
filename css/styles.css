@@ -24,6 +24,10 @@
 	src: url('../fonts/amble/Amble-Bold.ttf');
 }
 
+html, body {
+	overflow-x: hidden;
+}
+
 /** Basic Formatting **/
 
 .preload * {
@@ -385,7 +389,18 @@ section#sponsors-ceiling .sponsor-image-md {
 section#sponsors-ceiling .sponsor-image-sm {
 	max-height: 65px;
 }
-
+section#sponsors-ceiling {
+	height: 100%;
+	background-image: url('../images/WebDesign-14.jpg');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*padding: 400px 50px 1200px 50px;*/
+	/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+	/*padding-bottom: 100%;*/
+	background-color: #EADD92;
+}
 section#sponsors-floor {
 	height: 100%;
 	background-image: url('../images/devils-den-floor.jpg');
@@ -663,8 +678,53 @@ section#bottomlink h2{
 }
 
 @media screen and (max-width: 415px) {
+	.container {
+		overflow-x: hidden;
+	}
 	.flat-pr {
 		font-size: 18px;
+	}
+	section#about img.marston-ceiling {
+		overflow-x: hidden;
+		position: relative;
+		/*clip: rect(0px, 100vw, 200px, 0px);*/
+
+		width: 200%;
+		left: 0;
+		bottom: 0;
+		/*max-height: 500px;*/
+	}
+
+	section#faq img.marston-rooms {
+		position: relative;
+		width: 200%;
+		left: -70%;
+	}
+	section#sponsors-ceiling {
+		height: 100%;
+		background-image: url('../images/WebDesign-14.jpg');
+		background-position: 50% -20%;
+		/*contain scaled it to fit properly*/
+		background-size: 200%;
+		background-repeat: no-repeat;
+		background-position:
+		/*padding: 400px 50px 1200px 50px;*/
+		/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+		/*padding-bottom: 100%;*/
+		background-color: #EADD92;
+	}
+	section#sponsors-floor {
+		height: 100%;
+		background-image: url('../images/devils-den-floor.jpg');
+		background-position: center top;
+		/*contain scaled it to fit properly*/
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;
+		/*margin top provides spacing b/w last sponsor row and pool*/
+		margin-top: -3%;
+		padding-bottom: 30%;
+		background-color: #D6C476;
 	}
 }
 
