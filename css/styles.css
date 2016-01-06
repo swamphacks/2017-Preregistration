@@ -7,7 +7,7 @@
 
 /** Import Fonts **/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300');
 
 @font-face {
 	font-family: 'Amble-Light';
@@ -223,6 +223,7 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
+
 /*Schedule Section Formatting*/
 
 section#schedule .row-content {
@@ -232,7 +233,7 @@ section#schedule .row-content {
 
 section#schedule  {
 	background-color: #6B768E;
-	padding-bottom: 140px;
+	padding-bottom: 100px;
 	/*padding: 0 90px;*/
 }
 
@@ -242,22 +243,33 @@ section#schedule  .col-md-6 {
 
 
 section#schedule h2, section#schedule h3, section#schedule h4, section#schedule p {
-	color: white;
+	color: #FFFCD7;
 }
 
 section#schedule  h2 {
 	font-style: normal;
 	margin-top: 60px;
-	margin-bottom: 45px;
-	margin-left: -40px;
+	margin-bottom: 30px;
+	/*margin-left: -40px;*/
+	color: #FFFCD7;
+	text-align: center;
 }
+
+section#schedule  h3 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+}
+
 
 section#schedule  p {
 	float: right;
-
+	color: #9CDCFF;
 	 margin-top: 10px;
 	 font-size: 16px;
 	 margin-right: 20px;
+	 font-weight: 400;
 }
 
 section#schedule h4 {
@@ -265,6 +277,45 @@ section#schedule h4 {
 	    text-align: left;
 	    font-size:20px;
 			margin-left: 20px;
+
+}
+
+section#schedule h5 {
+	display: inline-block;
+	margin-top: -10px;
+	padding-left: 20px;
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size: 16px;
+	color: lightgray;
+}
+
+@media screen and (max-width: 992px) {
+	section#schedule .col-md-6 {
+		padding: 0;
+		padding-left: 0px;
+	}
+
+	section#schedule .row-content {
+		margin: 0;
+	}
+
+	section#schedule h4 {
+		float: none;
+		font-size: 24px;
+
+	}
+
+	section#schedule p {
+		float: none;
+		font-size: 20px;
+		margin-left: 20px;
+		font-style: bold;
+}
+
+	section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}
 
 }
 
