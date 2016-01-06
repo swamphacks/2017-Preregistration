@@ -7,7 +7,7 @@
 
 /** Import Fonts **/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300');
 
 @font-face {
 	font-family: 'Amble-Light';
@@ -22,6 +22,10 @@
 @font-face {
 	font-family: 'Amble-Bold';
 	src: url('../fonts/amble/Amble-Bold.ttf');
+}
+
+html, body {
+	overflow-x: hidden;
 }
 
 /** Basic Formatting **/
@@ -223,6 +227,104 @@ section#faq img.marston-rooms {
 	width: 100%;
 }
 
+
+/*Schedule Section Formatting*/
+
+section#schedule .row-content {
+
+	margin: 0 100px;
+}
+
+section#schedule  {
+	background-color: #6B768E;
+	padding-bottom: 60px;
+	/*padding: 0 90px;*/
+}
+
+section#schedule  .col-md-6 {
+	padding: 0 40px;
+}
+
+
+section#schedule h2, section#schedule h3, section#schedule h4, section#schedule p {
+	color: #FFFCD7;
+}
+
+section#schedule  h2 {
+	font-style: normal;
+	margin-top: 60px;
+	margin-bottom: 30px;
+	/*margin-left: -40px;*/
+	color: #FFFCD7;
+	text-align: center;
+}
+
+section#schedule  h3 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+}
+
+
+section#schedule  p {
+	float: right;
+	color: #9CDCFF;
+	 margin-top: 10px;
+	 font-size: 16px;
+	 margin-right: 20px;
+	 font-weight: 400;
+}
+
+section#schedule h4 {
+	float: left;
+	    text-align: left;
+	    font-size:20px;
+			margin-left: 20px;
+
+}
+
+section#schedule h5 {
+	display: inline-block;
+	margin-top: -10px;
+	padding-left: 20px;
+	font-family: 'Lato';
+	font-weight: 400;
+	font-size: 16px;
+	color: lightgray;
+}
+
+@media screen and (max-width: 992px) {
+	section#schedule .col-md-6 {
+		padding: 0;
+		padding-left: 0px;
+	}
+
+	section#schedule .row-content {
+		margin: 0;
+	}
+
+	section#schedule h4 {
+		float: none;
+		font-size: 24px;
+
+	}
+
+	section#schedule p {
+		float: none;
+		font-size: 20px;
+		margin-left: 20px;
+		font-style: bold;
+}
+
+	section#splash #mlh-trust-badge {
+		right: 25px !important;
+	}
+
+}
+
+
+
 /** Sponsors Section Formatting **/
 
 .sponsors {
@@ -278,7 +380,7 @@ transform: 			translateY(-50%);
 }
 
 section#sponsors-ceiling .sponsor-image-lg {
-	max-height: 180px;
+	max-height: 190px;
 	padding-bottom: 0%;
 }
 section#sponsors-ceiling .sponsor-image-md {
@@ -287,7 +389,18 @@ section#sponsors-ceiling .sponsor-image-md {
 section#sponsors-ceiling .sponsor-image-sm {
 	max-height: 65px;
 }
-
+section#sponsors-ceiling {
+	height: 100%;
+	background-image: url('../images/WebDesign-14.jpg');
+	background-position: center top;
+	/*contain scaled it to fit properly*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*padding: 400px 50px 1200px 50px;*/
+	/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+	/*padding-bottom: 100%;*/
+	background-color: #EADD92;
+}
 section#sponsors-floor {
 	height: 100%;
 	background-image: url('../images/devils-den-floor.jpg');
@@ -565,8 +678,53 @@ section#bottomlink h2{
 }
 
 @media screen and (max-width: 415px) {
+	.container {
+		overflow-x: hidden;
+	}
 	.flat-pr {
 		font-size: 18px;
+	}
+	section#about img.marston-ceiling {
+		overflow-x: hidden;
+		position: relative;
+		/*clip: rect(0px, 100vw, 200px, 0px);*/
+
+		width: 200%;
+		left: 0;
+		bottom: 0;
+		/*max-height: 500px;*/
+	}
+
+	section#faq img.marston-rooms {
+		position: relative;
+		width: 200%;
+		left: -70%;
+	}
+	section#sponsors-ceiling {
+		height: 100%;
+		background-image: url('../images/WebDesign-14.jpg');
+		background-position: 50% -20%;
+		/*contain scaled it to fit properly*/
+		background-size: 200%;
+		background-repeat: no-repeat;
+		background-position:
+		/*padding: 400px 50px 1200px 50px;*/
+		/*Dont need padding bottom since we have dummy logos that fill the content space now*/
+		/*padding-bottom: 100%;*/
+		background-color: #EADD92;
+	}
+	section#sponsors-floor {
+		height: 100%;
+		background-image: url('../images/devils-den-floor.jpg');
+		background-position: center top;
+		/*contain scaled it to fit properly*/
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;
+		/*margin top provides spacing b/w last sponsor row and pool*/
+		margin-top: -3%;
+		padding-bottom: 30%;
+		background-color: #D6C476;
 	}
 }
 
