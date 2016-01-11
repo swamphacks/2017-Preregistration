@@ -367,6 +367,7 @@ section#sponsors-ceiling .sponsor-logo-row {
 
 
 .sponsor-image-lg, .sponsor-image-md, .sponsor-image-sm {
+	object-fit: contain;
 	top: 50%;
 transform: 			translateY(-50%);
 	padding-bottom: 5%;
