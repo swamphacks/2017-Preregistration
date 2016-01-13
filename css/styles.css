@@ -385,7 +385,7 @@ section#sponsors-ceiling .sponsor-image-lg {
 	padding-bottom: 0%;
 }
 section#sponsors-ceiling .sponsor-image-md {
-	max-height: 150px;
+	max-height: 120px;
 }
 section#sponsors-ceiling .sponsor-image-sm {
 	max-height: 65px;
@@ -402,6 +402,11 @@ section#sponsors-ceiling {
 	/*padding-bottom: 100%;*/
 	background-color: #EADD92;
 }
+
+section#sponsors-ceiling .ge-logo {
+	max-height: 100px;
+}
+
 section#sponsors-floor {
 	height: 100%;
 	background-image: url('../images/devils-den-floor.jpg');
@@ -727,6 +732,11 @@ section#bottomlink h2{
 		padding-bottom: 30%;
 		background-color: #D6C476;
 	}
+
+	section#sponsors-ceiling .ge-logo {
+		max-height: 25px;
+	}
+
 }
 
 @media screen and (max-width: 568px) {
