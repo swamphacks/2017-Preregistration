@@ -37,3 +37,34 @@ $(function() {
     }
   });
 });
+
+function fixTime(time){
+               	
+             	var startHour = time.substring(11,13)
+                var hour = parseInt(startHour)
+                var startMinute = time.substring(14,16)
+                // console.log(startHour)
+                // console.log(hour)
+                // console.log(startMinute)
+                var startAMPM = "AM"
+                if (hour >= 12){
+  	                startAMPM = "PM"
+    
+                    if(hour > 12){
+                      hour -= 12
+                    }
+                }
+                else if (hour == 0){
+                    hour = 12
+                }
+
+
+                startHour = hour.toString()
+                  
+                  //{"dateTime":"2016-01-23T09:00:00-05:00"}
+
+                var newTime = startHour + ":" + startMinute + startAMPM;
+
+                return newTime
+
+}
