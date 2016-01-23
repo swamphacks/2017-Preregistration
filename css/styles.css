@@ -330,9 +330,11 @@ section#schedule h5 {
 	display: block;
 	overflow-y: auto;
 	max-height: 600px;
+	width: 45%;
 	border: 10px solid white;
 	padding: 0;
 	margin-bottom: 100px;
+	margin: 0 10px;
 
 }
 
@@ -922,5 +924,8 @@ a:hover {
 	font-size: 15px !important;
 
 }
+
+
+
 
 /**  END: Landing Page Styling  **/

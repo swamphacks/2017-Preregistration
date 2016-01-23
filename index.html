@@ -86,14 +86,23 @@
 				</div>
 			</div>
 
-      <h3 style="color: white;">Bulletin</h3>
 
-      <div class="col-md-6  tableWrapper" >
 
+      
+      <div class="col-sm-6">
+        <h3 style="color: white;" class= "text-center" >Bulletin</h3>
+      </div>
+
+      <div class="col-sm-6">
+                <h3 style="color: white;" class= "text-center" >Calendar</h3>
+
+      </div>
+      <div class="col-sm-6  tableWrapper" style=" margin-left: 4%;" >
+       
        
 
 
-        <table class="table table-striped table-hover" style="float: left; white-space: nowrap;" ng-controller = "ListingsController">
+        <table class="table table-striped table-hover classWithPad" style="float: left; white-space: nowrap;" ng-controller = "ListingsController">
             <tr id="hide" ng-repeat="listing in listings | filter:searchText" ng-click="listing.showDetails = !listing.showDetails">
                <td>
                  <div class="col-xs-2">
@@ -112,11 +121,11 @@
 
       </div>
 
+      
 
+      <div class="col-sm-6  tableWrapper" > 
 
-      <div class="col-md-6  tableWrapper" > 
-
-        <table class="table table-striped table-hover" style="float: center; white-space: nowrap;" ng-controller = "CalendarController">
+        <table class="table table-striped table-hover classWithPad" style="float: right; white-space: nowrap;" ng-controller = "CalendarController">
             
 
           <tr class = "detailed-tab"  ng-repeat="listing in calendar" >
