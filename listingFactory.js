@@ -1,9 +1,14 @@
 angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
-
+       {
+            "code": "code-fork",
+            "name": "Clarifai API",
+            "time": "3:43 PM",
+            "location": "https://developer.clarifai.com/signup/swamphacks"
+        },
       {
-          "code": "fort-awesome",
+          "code": "user-plus",
           "name": "Teams are limited to five people",
           "time": "1:56 PM",
           "location": "If you have more, you cannot submit!"
@@ -26,6 +31,8 @@ angular.module('listings').factory('Listings', function() {
             "time": "12:46 PM",
             "location": "https://goo.gl/8Rjfrr"
         }
+       
+        
 
       ]
     };
