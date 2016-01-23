@@ -2,7 +2,7 @@ angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
       {
-            "code": "code-fork",
+            "code": "gift",
             "name": "NEW PRIZE ANNOUNCEMENT - Nielsen - Best Measurement Hack",
             "time": "3:43 PM",
             "location": "$200 in Amazon gift cards "
