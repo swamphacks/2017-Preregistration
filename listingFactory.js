@@ -1,6 +1,12 @@
 angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
+      {
+            "code": "code-fork",
+            "name": "NEW PRIZE ANNOUNCEMENT - Nielsen - Best Measurement Hack",
+            "time": "3:43 PM",
+            "location": "$200 in Amazon gift cards "
+        },
        {
             "code": "code-fork",
             "name": "Clarifai API",
