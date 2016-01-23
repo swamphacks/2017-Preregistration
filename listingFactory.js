@@ -5,7 +5,7 @@ angular.module('listings').factory('Listings', function() {
             "code": "school",
             "name": "eduroam",
             "time": "4:24 PM",
-            "location": "Any students that go to FSU, FIU, or Georgia Tech may use the eduroam wifi network by logging in with his or her school email address and password. This will get past the SSH issue. "
+            "location": "Any students that go to FSU, FIU, or Georgia Tech \n may use the eduroam wifi network by logging in with \n his or her school email address and password. \n This will get past the SSH issue. "
         },
        {
             "code": "code-fork",
