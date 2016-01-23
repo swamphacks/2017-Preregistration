@@ -3,9 +3,9 @@ angular.module('listings').factory('Listings', function() {
     entries : [
       {
             "code": "gift",
-            "name": "NEW PRIZE ANNOUNCEMENT - Nielsen - Best Measurement Hack",
+            "name": "NEW PRIZE ANNOUNCEMENT - Nielsen",
             "time": "3:43 PM",
-            "location": "$200 in Amazon gift cards "
+            "location": "Best Measurement Hack - $200 in Amazon gift cards "
         },
        {
             "code": "code-fork",
