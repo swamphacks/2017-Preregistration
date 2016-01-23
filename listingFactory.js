@@ -1,12 +1,33 @@
 angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
+
+      {
+          "code": "users",
+          "name": "Team-building at registration desk!",
+          "time": "1:46 PM",
+          "location": "Don't hack alone!!"
+      },
+      {
+          "code": "users",
+          "name": "Team-building at registration desk!",
+          "time": "1:46 PM",
+          "location": "Don't hack alone!!"
+      },
         {
             "code": "ticket",
             "name": "Tech talks happening now!!! Go and join!",
             "time": "1:29 PM",
-            "location": "Food Area"
-        }]
+            "location": "Visualization Room"
+        },
+        {
+            "code": "info",
+            "name": "Find the opening ceremony slides here!",
+            "time": "12:46 PM",
+            "location": "https://goo.gl/8Rjfrr"
+        }
+
+      ]
     };
 
     return listings.entries;
