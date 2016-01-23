@@ -3,10 +3,10 @@ angular.module('listings').factory('Listings', function() {
     entries : [
 
       {
-          "code": "users",
-          "name": "Team-building at registration desk!",
-          "time": "1:46 PM",
-          "location": "Don't hack alone!!"
+          "code": "fort-awesome",
+          "name": "Teams are limited to five people",
+          "time": "1:56 PM",
+          "location": "If you have more, you cannot submit!"
       },
       {
           "code": "users",
