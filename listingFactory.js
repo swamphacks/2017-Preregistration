@@ -2,6 +2,12 @@ angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
       {
+            "code": "code",
+            "name": "Devpost",
+            "time": "10:23 AM",
+            "location": "http://swamphacks2016.devpost.com/ "
+        },
+      {
             "code": "building",
             "name": "NEW SPONSOR TABLE - General Electric",
             "time": "10:15 PM",
