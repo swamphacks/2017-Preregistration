@@ -2,6 +2,12 @@ angular.module('listings').factory('Listings', function() {
   var listings = {
     entries : [
       {
+            "code": "building",
+            "name": "NEW SPONSOR TABLE - General Electric",
+            "time": "10:15 PM",
+            "location": "Go see the GE sponsor table! "
+        },
+      {
             "code": "gift",
             "name": "NEW PRIZE ANNOUNCEMENT - Nielsen",
             "time": "3:43 PM",
