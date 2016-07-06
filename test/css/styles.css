@@ -2,31 +2,76 @@
   height: 100vh;
 }
 
-.gray1 {
+.heading-page {
   background-color: #c5c5c5;
 }
 
-.gray2 {
+.about-page {
   background-color: #ababab;
+  background-image: url('../img/sayagata-400px.png');
 }
 
-.gray3 {
+.statistic-page {
   background-color: #919191;
-}
-
-.gray4 {
-  background-color: #666666;
+  background-image: url('../img/weather.png');
 }
 
 .gray5 {
   background-color: #333333;
 }
 
+.graph{
+  background-image: url('../img/ignasi_pattern_s.png');
+  width: 500px;
+  height: 300px;
+  float: right;
+  margin: 100px;
+}
+
+.parallax {
+  /*background-repeat: no-repeat;*/
+  background-attachment: fixed;
+  /*background-size: cover;*/
+}
+
+.stick {
+    position:fixed;
+    top:0px;
+}
+
 h3 {
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   color: black;
+  font-size: 40px;
 }
+h4{
+  color: white;
+  text-align: center;
+}
+p{
+  font-size: 20px;
+}
+
+.testimonial-page {
+  background-image: url('../img/upfeathers.png');
+  text-align: center;
+}
+
+.testimonial-profile{
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.testimonial-card{
+  padding: 0px 60px;
+}
+
 
 .logo {
   margin-top: 10%;
