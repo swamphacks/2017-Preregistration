@@ -1,9 +1,15 @@
+body{
+  font-family: 'Lato';
+}
+
 .wrapper {
   height: 100vh;
 }
 
 .heading-page {
-  background-color: #c5c5c5;
+  background-image: url('../img/Landing-02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-page {
@@ -16,14 +22,25 @@
   background-image: url('../img/weather.png');
 }
 
-.gray5 {
-  background-color: #333333;
+.logo-head{
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.action-buttons-house {
+  margin: 10% 5%;
+  padding: 2px;
+  border-radius: 16px;
+  width: 90%;
+  height: 140px;
+  border: white solid 5px;
 }
 
 .graph{
-  background-image: url('../img/ignasi_pattern_s.png');
-  width: 500px;
-  height: 300px;
+  /*background-image: url('../img/ignasi_pattern_s.png');*/
+  width: 600px;
+  height: 400px;
   float: right;
   margin: 100px;
 }
@@ -39,15 +56,35 @@
     top:0px;
 }
 
+.button-texts {
+  border-top: white solid 5px;
+  margin: 10px 0px;
+  padding: 8px;
+  width: 100%;
+  display: inline-block;
+}
+
+.button {
+  font-size: 32px;
+}
+
+h2 {
+  text-align: center;
+  color: #24b06f;
+  font-size: 28px;
+}
+
 h3 {
   text-align: left;
   vertical-align: middle;
   color: black;
   font-size: 40px;
+  font-family: 'Lato';
 }
 h4{
   color: white;
   text-align: center;
+  font-size: 22px;
 }
 p{
   font-size: 20px;
@@ -74,7 +111,7 @@ p{
 
 
 .logo {
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 10%;
 }
 

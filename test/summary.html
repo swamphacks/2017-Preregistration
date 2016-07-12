@@ -9,24 +9,32 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/sticky.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/chart.js/dist/Chart.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-  </script>
+
 </head>
 <body>
 
 <div class="container-fluid">
   <div class="row wrapper heading-page">
-    <div class = "col-sm-6 col-sm-offset-3 gray2 logo">
-      <h3>Logo</h3>
-    </div>
-    <div class="col-sm-2 col-sm-offset-2 gray2 attendee-buttons">
-      <h3>Hackers</h3>
-    </div>
-    <div class="col-sm-2 col-sm-offset-1 gray2 attendee-buttons">
-      <h3>Volunteers</h3>
-    </div>
-    <div class="col-sm-2 col-sm-offset-1 gray2 attendee-buttons">
-      <h3>Sponsors</h3>
+    <div class = "col-sm-6 col-sm-offset-3 logo">
+      <img class="logo-head" src="img/Landing-03.png" alt="" />
+      <h2>University of Florida | January 20-22, 2017</h2>
+      <div class="action-buttons-house">
+        <h4>hey there! who are you?</h4>
+        <div class="button-texts" style="border-top: white solid 4px;">
+          <div class="col-sm-6 button">
+            <h4>HACKER</h4>
+
+          </div>
+          <div class="col-sm-6 button">
+            <h4>SPONSOR</h4>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -43,19 +51,19 @@ Tacos polaroid neutra slow-carb flannel street art. Hammock viral fixie, kogi to
 
 
   <div class="row wrapper parallax statistic-page">
-    <div class="col-sm-4 col-sm-offset-1 gray4 logo" id="sticker">
+    <div class="col-sm-3 col-sm-offset-1 gray4 logo" id="sticker">
       <h3>Statistics</h3>
       <p>
         Forage 8-bit next level sriracha cold-pressed. Cronut meditation microdosing, affogato ennui 8-bit narwhal drinking vinegar small batch typewriter poutine listicle schlitz. Roof party actually dreamcatcher fingerstache
       </p>
     </div>
-    <div class="col-sm-4 col-sm-offset-2 graph logo">
-      <h3>Graphs</h3>
+    <div class="col-sm-6 col-sm-offset-2 graph logo">
+      <canvas id="participantsChart" height="200px"></canvas>
     </div>
   </div>
   <div class="row wrapper parallax statistic-page">
     <div class="col-sm-4 col-sm-offset-2 graph logo">
-      <h3>Graphs</h3>
+      <canvas id="schoolsChart" height="200px"></canvas>
     </div>
   </div>
   <div class="row wrapper parallax statistic-page">
