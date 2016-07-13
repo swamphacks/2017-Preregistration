@@ -3,7 +3,42 @@ body{
 }
 
 .wrapper {
-  height: 100vh;
+  height: auto;
+}
+
+.quote-pic {
+  width: 400px;
+  height: 200px;
+  border-radius: 18px;
+}
+
+.quote-name {
+  color: black;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.footer-note {
+  background-color: #97ffff;
+}
+
+.quote-title {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+
+.quote {
+  border-left: 6px solid #598eca;
+  padding: 0px 14px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.testimonial {
+  margin: 80px 0px;
 }
 
 .heading-page {
@@ -13,13 +48,17 @@ body{
 }
 
 .about-page {
-  background-color: #ababab;
   background-image: url('../img/sayagata-400px.png');
+  opacity: 0.8;
+  background-color: #ababab;
+
 }
 
 .statistic-page {
   background-color: #919191;
-  background-image: url('../img/weather.png');
+  background-image: url('../img/Stats-Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo-head{
@@ -31,10 +70,8 @@ body{
 .action-buttons-house {
   margin: 10% 5%;
   padding: 2px;
-  border-radius: 16px;
   width: 90%;
   height: 140px;
-  border: white solid 5px;
 }
 
 .graph{
@@ -57,15 +94,23 @@ body{
 }
 
 .button-texts {
-  border-top: white solid 5px;
-  margin: 10px 0px;
+  margin: 5px 0px;
   padding: 8px;
   width: 100%;
   display: inline-block;
 }
 
 .button {
-  font-size: 32px;
+  font-size: 28px;
+  color: #a1e3f0;
+}
+
+.pre-reg-button{
+  border-radius: 18px;
+  background-color: white;
+  border: none;
+  width: 180px;
+  height: 60px;
 }
 
 h2 {
@@ -91,7 +136,7 @@ p{
 }
 
 .testimonial-page {
-  background-image: url('../img/upfeathers.png');
+  background-color: white;
   text-align: center;
 }
 
