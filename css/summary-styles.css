@@ -5,6 +5,8 @@ src: url("../assets/quicksand/Quicksand_Regular.otf") format("opentype");
 
 body{
   font-family: 'Muli', sans-serif;
+  overflow-x:hidden;
+  width: 100vw;
 }
 
 .container-fluid {
@@ -38,13 +40,13 @@ p{
 }
 
 .white-divider {
-  width: 100%;
+  width: 120%;
   margin-bottom: -2px;
 }
 
 .flipped {
   transform: rotate(180deg);
-
+  margin-top: -4px;
 }
 
 .about-page {
@@ -137,7 +139,7 @@ p{
 }
 
 .footer-note {
-  background-color: #97ffff;
+  background-color: #97fff2;
 }
 
 .quote-title {
@@ -182,13 +184,6 @@ p{
   margin: auto;
 }
 
-.action-buttons-house {
-  margin: 10% 5%;
-  padding: 2px;
-  width: 90%;
-  height: 140px;
-}
-
 .graph{
   /*background-image: url('../img/ignasi_pattern_s.png');*/
   width: 600px;
@@ -217,7 +212,18 @@ p{
 
 .button {
   font-size: 28px;
-  color: #a1e3f0;
+  color: #97fff2;
+}
+
+.action-buttons-house {
+  margin: 20px;
+  padding: 2px;
+  width: 90%;
+  height: 140px;
+}
+
+.footer-note h4 {
+  margin-bottom: 20px;
 }
 
 .pre-reg-button{
@@ -226,7 +232,16 @@ p{
   border: none;
   width: 180px;
   height: 60px;
+  margin: 0 50%;
+  transform: translateX(-50%);
+  color: #97fff2;
+  font-size: 20px;
 }
+
+i {
+  font-size: 100px;
+}
+
 
 .testimonial-page {
   background-color: white;
@@ -275,9 +290,7 @@ p{
     margin: auto 0;
     transform: translateX(-50%);
   }
-  section {
-    padding: 0px 10px;
-  }
+
   .quote-pic {
     width: 90%;
     margin: auto;
@@ -297,6 +310,10 @@ p{
 
   .top {
     margin-top: -100px;
+  }
+
+  .testimonials {
+    margin-top: -40px;
   }
 }
 .stats-text h3 {
