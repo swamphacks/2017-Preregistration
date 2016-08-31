@@ -1,23 +1,110 @@
+
 body{
   font-family: 'Lato';
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #24b06f;
+  font-size: 28px;
+}
+
+h3 {
+  text-align: left;
+  vertical-align: middle;
+  color: black;
+  font-size: 40px;
+  font-family: 'Lato';
+}
+h4{
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+p{
+  font-size: 20px;
 }
 
 .wrapper {
   height: auto;
 }
 
+/*Stats*/
+.lastYear {
+  background-color: #919191;
+  background-image: url('../img/Stats-Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.nextYear {
+  background-color: #919191;
+  background-image: url('../img/NextYear-Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.stats-row {
+  display: block;
+  min-height: 200px;
+  margin: 0;
+}
+.stats-icon {
+  position: absolute;
+  right: 10px;
+  color: white;
+  width: 220px;
+  height: 220px;
+  padding: 20px;
+  margin-right: 10px;
+}
+.stats-text {
+  margin-top: 100px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.stats-header {
+  padding-top: 80px;
+  margin-bottom: 30px;
+}
+
+.stats-header h3 {
+  color: white;
+}
+
+/**/
+
+/*Quotes*/
+
 .quote-pic {
-  width: 400px;
-  height: 200px;
-  border-radius: 18px;
+  width: 100%;
+  /*height: 200px;*/
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
 }
 
 .quote-name {
-  color: black;
+  /*color: black;
   text-align: left;
   font-size: 30px;
   font-weight: bold;
-  margin: 0px;
+  margin: 0px;*/
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.quote-description {
+  text-align: right;
+  font-size: 16px;
 }
 
 .footer-note {
@@ -52,13 +139,6 @@ body{
   opacity: 0.8;
   background-color: #ababab;
 
-}
-
-.statistic-page {
-  background-color: #919191;
-  background-image: url('../img/Stats-Background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .logo-head{
@@ -113,28 +193,6 @@ body{
   height: 60px;
 }
 
-h2 {
-  text-align: center;
-  color: #24b06f;
-  font-size: 28px;
-}
-
-h3 {
-  text-align: left;
-  vertical-align: middle;
-  color: black;
-  font-size: 40px;
-  font-family: 'Lato';
-}
-h4{
-  color: white;
-  text-align: center;
-  font-size: 22px;
-}
-p{
-  font-size: 20px;
-}
-
 .testimonial-page {
   background-color: white;
   text-align: center;
@@ -154,7 +212,6 @@ p{
   padding: 0px 60px;
 }
 
-
 .logo {
   margin-top: 8%;
   margin-bottom: 10%;
@@ -167,4 +224,43 @@ p{
 .footer {
   height: 25vh;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .stats-text {
+    margin-top: 200px;
+    transform: none;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+  .stats-icon {
+    left: 50%;
+    margin: auto 0;
+    transform: translateX(-50%);
+  }
+  section {
+    padding: 0px 10px;
+  }
+  .quote-pic {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: -50%;
+  }
+
+  .stats-header {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .stats-row {
+    padding-bottom: 30px;
+  }
+}
+.stats-text h3 {
+  color: white;
+  font-weight: bold;
 }
