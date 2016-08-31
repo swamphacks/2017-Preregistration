@@ -37,6 +37,16 @@ p{
   height: auto;
 }
 
+.white-divider {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.flipped {
+  transform: rotate(180deg);
+
+}
+
 .about-page {
   padding: 90px 0px;
 }
@@ -48,7 +58,7 @@ p{
 /*Stats*/
 .lastYear {
   background-color: #919191;
-  background-image: url('../img/Stats-Background.png');
+  background-image: url('../img/swamphacks_stats-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -56,7 +66,7 @@ p{
 
 .nextYear {
   background-color: #919191;
-  background-image: url('../img/NextYear-Background.png');
+  background-image: url('../img/swamphacks_next-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -94,9 +104,12 @@ p{
 /**/
 
 /*Quotes*/
+.testimonials {
+  margin-top: -80px;
+}
 
-.youLike h3 {
-  color: black;
+.testimonials h3 {
+  color: #598eca;
   margin-bottom: 60px;
 }
 .quote-pic {
@@ -151,10 +164,16 @@ p{
 }
 
 .about-page {
-  background-image: url('../img/sayagata-400px.png');
-  opacity: 0.8;
-  background-color: #ababab;
+  background-color: white;
+  opacity: 1;
+}
 
+.about-page h3 {
+  color: #97fff2;
+}
+
+.top {
+  margin-top: -140px;
 }
 
 .logo-head{
@@ -274,6 +293,10 @@ p{
 
   .stats-row {
     padding-bottom: 30px;
+  }
+
+  .top {
+    margin-top: -100px;
   }
 }
 .stats-text h3 {
