@@ -44,6 +44,12 @@ p{
   font-size: 20px;
 }
 
+br {
+  display: block;
+  margin: 10px;
+  line-height: 36px;
+}
+
 .row {
   width: 100vw;
   margin: 0px;
