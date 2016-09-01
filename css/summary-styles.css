@@ -3,6 +3,15 @@ font-family: Quicksand;
 src: url("../assets/quicksand/Quicksand_Regular.otf") format("opentype");
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body{
   font-family: 'Muli', sans-serif;
   overflow-x:hidden;
@@ -35,12 +44,17 @@ p{
   font-size: 20px;
 }
 
+.row {
+  width: 100vw;
+  margin: 0px;
+}
+
 .wrapper {
   height: auto;
 }
 
 .white-divider {
-  width: 120%;
+  width: 100%;;
   margin-bottom: -2px;
 }
 
@@ -116,10 +130,11 @@ p{
 }
 .quote-pic {
   width: 100%;
+  max-height: 140%;
   /*height: 200px;*/
   padding: 20px;
   position: absolute;
-  top: 50%;
+  top: 20%;
   right: 0px;
 }
 
@@ -138,8 +153,12 @@ p{
   font-size: 16px;
 }
 
+.footer-note .flipped {
+  margin-top: -8px;
+}
+
 .footer-note {
-  background-color: #97fff2;
+  background-color: #7bffbd;
 }
 
 .quote-title {
@@ -171,7 +190,7 @@ p{
 }
 
 .about-page h3 {
-  color: #97fff2;
+  color: #5aed96;
 }
 
 .top {
@@ -182,6 +201,12 @@ p{
   width: 80%;
   display: block;
   margin: auto;
+}
+
+.social-media {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
 }
 
 .graph{
@@ -220,6 +245,16 @@ p{
   padding: 2px;
   width: 90%;
   height: 140px;
+}
+
+.action-buttons-house .social-row {
+  /*padding: 0px auto;*/
+  text-align: center;
+  margin-top: 22px;
+}
+
+.action-buttons-house .social-media:hover {
+  opacity: 0.8;
 }
 
 .footer-note h4 {
@@ -313,7 +348,7 @@ i {
   }
 
   .testimonials {
-    margin-top: -40px;
+    margin-top: -10px;
   }
 }
 .stats-text h3 {
