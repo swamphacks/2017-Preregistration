@@ -10,11 +10,11 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+
 }
 
 body{
   font-family: 'Muli', sans-serif;
-  overflow-x:hidden;
   width: 100vw;
 }
 
@@ -237,7 +237,7 @@ p{
 
 .button {
   font-size: 28px;
-  color: #97fff2;
+  color: #7bffbd;
 }
 
 .action-buttons-house {
@@ -253,8 +253,12 @@ p{
   margin-top: 22px;
 }
 
-.action-buttons-house .social-media:hover {
+/*.action-buttons-house .social-media:hover {
   opacity: 0.8;
+}*/
+
+.footer-note a:hover {
+  opacity: 0.7;
 }
 
 .footer-note h4 {
@@ -269,7 +273,7 @@ p{
   height: 60px;
   margin: 0 50%;
   transform: translateX(-50%);
-  color: #97fff2;
+  color: #7bffbd;
   font-size: 20px;
 }
 
