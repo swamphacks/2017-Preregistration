@@ -50,6 +50,10 @@ br {
   line-height: 36px;
 }
 
+.about-page br {
+  line-height: 44px;
+}
+
 .row {
   width: 100vw;
   margin: 0px;
