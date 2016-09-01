@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/summary-styles.css">
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: 'AIzaSyCKrjgs7TMiPDl-nqaqnBTAhigNrNszQPk',
+      authDomain: 'swamphacks-a6338.firebaseapp.com',
+      databaseURL: 'https://swamphacks-a6338.firebaseio.com',
+      storageBucket: '',
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/sticky.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/chart.js/dist/Chart.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row wrapper heading-page">
+    <div class = "col-sm-6 col-sm-offset-3 logo">
+      <img class="logo-head" src="img/Landing-03.png" alt="" />
+      <h2>University of Florida | January 20-22, 2017</h2>
+      <div class="action-buttons-house">
+        <h4>hey there! who are you?</h4>
+        <div class="button-texts">
+          <div class="col-sm-6 button">
+            <h4>HACKER</h4>
+
+          </div>
+          <div class="col-sm-6 button">
+            <h4>SPONSOR</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row wrapper about-page">
+    <div class="col-sm-8 col-sm-offset-2 gray3 logo">
+      <h3>About/Summary</h3>
+      <p>
+        Asymmetrical synth kinfolk celiac twee. Cronut synth literally brooklyn, wolf forage roof party food truck. Affogato williamsburg readymade four loko bespoke irony. Health goth drinking vinegar bicycle rights fingerstache cray. Etsy raw denim mumblecore chartreuse austin. Chambray drinking vinegar hammock stumptown, ethical godard organic DIY blog pork belly pop-up narwhal kale chips tattooed fap. Echo park retro selfies synth, cronut letterpress roof party neutra williamsburg knausgaard chambray mumblecore kitsch PBR&B.
+
+Tacos polaroid neutra slow-carb flannel street art. Hammock viral fixie, kogi tote bag polaroid sustainable. Bitters pug sustainable beard marfa.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row wrapper parallax statistic-page">
+    <div class="col-sm-3 col-sm-offset-1 gray4 logo" id="sticker">
+      <h3>Statistics</h3>
+      <p>
+        Forage 8-bit next level sriracha cold-pressed. Cronut meditation microdosing, affogato ennui 8-bit narwhal drinking vinegar small batch typewriter poutine listicle schlitz. Roof party actually dreamcatcher fingerstache
+      </p>
+    </div>
+    <div class="col-sm-6 col-sm-offset-2 graph logo">
+      <canvas id="participantsChart" height="200px"></canvas>
+    </div>
+  </div>
+  <div class="row wrapper parallax statistic-page">
+    <div class="col-sm-4 col-sm-offset-2 graph logo">
+      <canvas id="schoolsChart" height="200px"></canvas>
+    </div>
+  </div>
+  <div class="row wrapper parallax statistic-page">
+    <div class="col-sm-4 col-sm-offset-2 graph logo">
+      <h3>Graphs</h3>
+    </div>
+  </div>
+
+  <div class="row wrapper testimonial-page">
+    <h3>Statistics</h3>
+
+    <div class="col-sm-4 logo testimonial-card">
+      <img class="testimonial-profile" src="img/weather.png" alt="" />
+      <h4>Testimonial 1</h4>
+      <h5>Title of Person</h5>
+      <p class="testimonial-excerpt">
+        Kinfolk leggings small batch seitan taxidermy post-ironic. Everyday carry authentic neutra, before they sold out cardigan shoreditch tacos try-hard cold-pressed tumblr shabby chic.
+      </p>
+    </div>
+    <div class="col-sm-4 logo testimonial-card">
+      <img class="testimonial-profile" src="img/weather.png" alt="" />
+      <h4>Testimonial 2</h4>
+      <h5>Title of Person</h5>
+      <p class="testimonial-excerpt">
+        Kinfolk leggings small batch seitan taxidermy post-ironic. Everyday carry authentic neutra, before they sold out cardigan shoreditch tacos try-hard cold-pressed tumblr shabby chic.
+      </p>
+    </div>
+    <div class="col-sm-4 logo testimonial-card">
+      <img class="testimonial-profile" src="img/weather.png" alt="" />
+      <h4>Testimonial 3</h4>
+      <h5>Title of Person</h5>
+      <p class="testimonial-excerpt">
+        Kinfolk leggings small batch seitan taxidermy post-ironic. Everyday carry authentic neutra, before they sold out cardigan shoreditch tacos try-hard cold-pressed tumblr shabby chic.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer gray5">
+  Footer
+</footer>
+
+</body>
+</html>
