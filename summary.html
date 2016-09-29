@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="shortcut icon" type="image/png" href="http://swamphacks.com/favicon.png"/>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
   <script>
   // Initialize Firebase
   var config = {
@@ -35,7 +36,7 @@
 
   $(document).ready(function(){
 
-    $('#modal-submit-btn').on('click', function(event) {
+    $('#btn-btn-default').on('click', function(event) {
       event.preventDefault();
 
       var userEmail = $('#userEmail').val();
@@ -54,7 +55,45 @@
     <div class = "col-sm-6 col-sm-offset-3 logo">
       <img class="logo-head" src="img/Landing-03.png" alt="" />
       <h2>University of Florida | January 20-22, 2017</h2>
+
+      <!-- Typing effect -->
+      <p id="typed" style="text-align: center; font-family: monospace; color: FFFCD7;"></p>
+
+      <script>
+      $('#typed').typeIt({
+        strings: ["Hack", "Create", "Learn", "Innovate"],
+        speed: 300,
+        deleteSpeed: 200,
+        lifeLike: true,
+        breakLines: false,
+        breakDelay: 750,
+        autoStart: true,
+        loop: true
+      })
+      .tiPause(300);
+      </script>
+      <!-- /typing -->
+
     </div>
+    <div class="col-sm-10 col-sm-offset-1 top">
+      <h3 style="text-align: center;">Want to stay updated?</h3>
+      <p style="text-align: center;">
+        Stuff about staying updated here...
+      </p>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-3">
+          <div class="input-group">
+            <input type="text" class="form-control" />
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Keep Me Updated!</button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+    </div>
+
     <img class="white-divider" src="img/swamphacks_top-border.png" alt="" />
   </div>
 
