@@ -17,36 +17,6 @@
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   <link rel="shortcut icon" type="image/png" href="http://swamphacks.com/favicon.png"/>
   <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
-  <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: 'AIzaSyCKrjgs7TMiPDl-nqaqnBTAhigNrNszQPk',
-    authDomain: 'swamphacks-a6338.firebaseapp.com',
-    databaseURL: 'https://swamphacks-a6338.firebaseio.com',
-    storageBucket: '',
-  };
-  firebase.initializeApp(config);
-  var database = firebase.database();
-
-  function addUserEmail(email) {
-    firebase.database().ref('users/').push({
-      email: email
-    });
-  }
-
-  $(document).ready(function(){
-
-    $('#btn-btn-default').on('click', function(event) {
-      event.preventDefault();
-
-      var userEmail = $('#userEmail').val();
-      addUserEmail(userEmail);
-      console.log(userEmail);
-    });
-
-  });
-
-  </script>
 </head>
 <body>
 
