@@ -43,7 +43,7 @@ h4{
   font-size: 22px;
 }
 p{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 br {
@@ -60,10 +60,14 @@ br {
   width: 100vw;
   margin: 0px;
 }
+a:hover {
+  text-decoration: none;
+}
 
 .wrapper {
   height: auto;
 }
+/** ~pre-registration styles~ **/
 .form-control {
   color: #24b06f;
   background-color: transparent;
@@ -86,6 +90,23 @@ br {
     background-color: #56dc9d;
     border-color: transparent; /*set the color you want here*/
 }
+.sh-countdown {
+  text-align: right;
+  margin-top: 2em;
+  margin-right: 2em;
+  color: #24b06f;
+  font-size: 16px;
+}
+.prereg-bottom {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.email-links {
+  text-align: center;
+  margin-top: 20px;
+}
+/** ~end pre-registration styles~ **/
+
 /**.white-divider {
   width: 100%;;
   margin-bottom: -2px;
