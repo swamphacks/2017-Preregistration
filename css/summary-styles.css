@@ -10,7 +10,9 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-
+    background-image: url('../img/Landing-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
@@ -62,11 +64,32 @@ br {
 .wrapper {
   height: auto;
 }
-
-.white-divider {
+.form-control {
+  color: #24b06f;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  width: 500px;
+  border-bottom: 2px solid #fff;
+  border-radius: 0;
+}
+.btn-default {
+  opacity: .7;
+  border-radius: 0;
+  background-color: #2bd485;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-default {
+    color: black;
+    background-color: #56dc9d;
+    border-color: transparent; /*set the color you want here*/
+}
+/**.white-divider {
   width: 100%;;
   margin-bottom: -2px;
-}
+}**/
 
 .flipped {
   transform: rotate(180deg);
@@ -189,7 +212,6 @@ br {
 }
 
 .heading-page {
-  background-image: url('../img/Landing-02.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
