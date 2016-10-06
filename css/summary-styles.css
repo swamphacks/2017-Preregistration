@@ -26,7 +26,7 @@ body{
 
 h2 {
   text-align: center;
-  color: #24b06f;
+  color: #4d94ff;
   font-size: 28px;
 }
 
@@ -38,7 +38,7 @@ h3 {
   font-family: 'Muli';
 }
 h4{
-  color: white;
+  color: #24b06f;
   text-align: center;
   font-size: 22px;
 }
@@ -69,7 +69,7 @@ a:hover {
 }
 /** ~pre-registration styles~ **/
 .form-control {
-  color: #24b06f;
+  color: grey;
   background-color: transparent;
   outline: none;
   border: none;
@@ -80,21 +80,24 @@ a:hover {
   border-bottom: 2px solid #fff;
   border-radius: 0;
 }
-.btn-default {
+#subscribe {
   opacity: .7;
   border-radius: 0;
-  background-color: #2bd485;
+  background-color: transparent;
+  border-color: transparent;
+  color: grey;
+  margin-left: -80px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-default {
-    color: black;
-    background-color: #56dc9d;
+    color: grey;
+    background-color: transparent;
     border-color: transparent; /*set the color you want here*/
 }
 .sh-countdown {
   text-align: right;
   margin-top: 2em;
   margin-right: 2em;
-  color: #24b06f;
+  color: grey;
   font-size: 16px;
 }
 .prereg-bottom {
@@ -104,6 +107,14 @@ a:hover {
 .email-links {
   text-align: center;
   margin-top: 20px;
+}
+#submitted {
+  opacity: .7;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: blue;
+  margin-left: -80px;
 }
 /** ~end pre-registration styles~ **/
 

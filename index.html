@@ -42,11 +42,11 @@ ga('send', 'pageview');
   <div class="container">
   <div class="row wrapper heading-page">
     <div class = "col-sm-6 col-sm-offset-3 logo">
-      <img class="logo-head" src="img/Landing-03.png" alt="" />
+      <img class="logo-head" src="img/SwampHacks-LandingPage-Logo.png" alt="" />
+      <p id="typed" style="text-align: right; margin-right: 25%; margin-top: -2em; font-family: monospace; color: FFFCD7;"></p>
       <h2>University of Florida | January 20-22, 2017</h2>
 
       <!-- Typing effect -->
-      <p id="typed" style="text-align: center; font-family: monospace; color: FFFCD7;"></p>
 
       <script>
       $('#typed').typeIt({
@@ -62,12 +62,18 @@ ga('send', 'pageview');
       .tiPause(300);
       </script>
       <!-- /typing -->
+      <h4>Sign up for updates</h4>
       <form class="email-form">
-            <input type="email" id="email" class="form-control center-block" placeholder="Enter your e-mail to receive updates about SwampHacks 2017!" />
-            <button id="email-submit" class="btn btn-default center-block" type="button" style="margin-top: 20px;">Submit</button>
+        <div class="input-group">
+          <input type="email" id="email" class="form-control" placeholder="e-mail address">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="subscribe">Subscribe</button>
+          </span>
+        </div>
       </form>
+      <span class="submitted"></span>
       <div class="email-links">
-        <a href="mailto:info@swamphacks.com">info</a> | <a href="mailto:sponsors@swamphacks.com">sponsors</a>
+        <a href="mailto:info@swamphacks.com">info@swamphacks.com</a> | <a href="mailto:sponsors@swamphacks.com">sponsors@swamphacks.com </a>
       </div>
   </div>
 

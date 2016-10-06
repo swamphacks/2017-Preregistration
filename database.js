@@ -10,10 +10,13 @@ $(function() {
   $('.email-form').on('submit', event => {
     event.preventDefault();
     var email = $("#email").val();
-    firebase.database().ref('users').push({
+    firebase.database().ref('subscribed-users').push({
       email
+    }).then(() =>{
+      $('.submitted').text( "Thanks for subscribing!" ).show().fadeOut( 3000 );
     }).then(() => {
-      document.location.reload(true);
+      //make the button change colors
+      $('#subscribe').css('color', '#4d94ff');
     });
   });
 });
