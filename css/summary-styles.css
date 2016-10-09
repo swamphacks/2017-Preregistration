@@ -20,14 +20,12 @@ body{
   width: 100vw;
 }
 
-.container-fluid {
-  padding: 0;
-}
 
 h2 {
+  font-size: 25px;
   text-align: center;
   color: #4d94ff;
-  font-size: 28px;
+  margin-bottom: 1em;
 }
 
 h3 {
@@ -43,7 +41,7 @@ h4{
   font-size: 22px;
 }
 p{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 br {
@@ -68,41 +66,50 @@ a:hover {
   height: auto;
 }
 /** ~pre-registration styles~ **/
+.input-group {
+    width: 40%;
+    margin: 0 auto;
+}
 .form-control {
-  color: grey;
+  color: white;
   background-color: transparent;
   outline: none;
   border: none;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  width: 500px;
+  width: 50%;
   border-bottom: 2px solid #fff;
   border-radius: 0;
+}
+input::-webkit-input-placeholder {
+color: white !important;
 }
 #subscribe {
   opacity: .7;
   border-radius: 0;
   background-color: transparent;
   border-color: transparent;
-  color: grey;
+  color: white;
   margin-left: -80px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-default {
-    color: grey;
+    color: white;
     background-color: transparent;
     border-color: transparent; /*set the color you want here*/
 }
 .sh-countdown {
-  text-align: right;
+  text-align: center;
   margin-top: 2em;
   margin-right: 2em;
-  color: grey;
+  color: white;
   font-size: 16px;
 }
 .prereg-bottom {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #24b06f;
 }
 .email-links {
   text-align: center;
@@ -115,6 +122,11 @@ a:hover {
   border-color: transparent;
   color: blue;
   margin-left: -80px;
+}
+.submitted {
+    color:  white;
+    text-align: center;
+    margin-top: 1em;
 }
 /** ~end pre-registration styles~ **/
 
@@ -246,6 +258,7 @@ a:hover {
 .heading-page {
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 .about-page {
@@ -262,7 +275,7 @@ a:hover {
 }
 
 .logo-head{
-  width: 80%;
+  width: 75%;
   display: block;
   margin: auto;
 }
@@ -368,6 +381,10 @@ i {
 .logo {
   margin-top: 8%;
   margin-bottom: 10%;
+    display: block;
+    margin: auto;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .attendee-buttons {
