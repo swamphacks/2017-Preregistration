@@ -30,7 +30,7 @@ ga('send', 'pageview');
 
 </script>-->
 <body>
-  <div id="sh-countdown" class="sh-countdown"></div>
+  <!-- <div id="sh-countdown" class="sh-countdown"></div>
   <script type="text/javascript">
   $("#sh-countdown")
   .countdown("2017/01/20", function(event) {
@@ -38,57 +38,78 @@ ga('send', 'pageview');
       event.strftime('%D days, %H hours, %M minutes, and %S seconds till SwampHacks 2017!')
     );
   });
-</script>
+</script> -->
   <div class="container">
     <div class = "logo">
       <img class="logo-head" src="img/SwampHacks-LandingPage-Logo.png" alt="" />
-      <p id="typed" style="text-align: right; position: relative; margin-right: 20%; margin-top: -2em; font-family: 'Muli', sans-serif; color: #24b06f;"></p>
+      <!-- <p id="typed" style="text-align: right; position: relative; margin-right: 40px; margin-top: -30px; font-family: 'Pier Sans', sans-serif; color: #24b06f;"></p> -->
       <h2>University of Florida | January 20-22, 2017</h2>
 
       <!-- Typing effect -->
 
       <script>
       $('#typed').typeIt({
-        strings: ["Hack", "Create", "Learn", "Innovate"],
-        speed: 300,
-        deleteSpeed: 200,
+        // strings: ["Hack", "Create", "Learn", "Innovate"],
+        speed: 100,
+        deleteSpeed: 100,
         lifeLike: true,
-        breakLines: false,
-        breakDelay: 750,
+        breakLines: true,
+        breakDelay: 1050,
         autoStart: true,
         loop: true
       })
-      .tiPause(300);
+      .tiType("create something you never have before")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("meet new people and build your community")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("eat ice cream out of the hands of the gods")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("spend your January in the Florida sun")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
       </script>
       <!-- /typing -->
       <h4>Sign up for updates</h4>
       <form class="email-form">
         <div class="input-group">
-          <input type="email" id="email" class="form-control" placeholder="e-mail address">
+          <input type="email" id="email" class="form-control" placeholder="email address">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button" id="subscribe">Subscribe</button>
           </span>
         </div>
       </form>
       <p class="submitted"></span>
-      <div class="email-links">
-        <a href="mailto:info@swamphacks.com">info@swamphacks.com</a> | <a href="mailto:sponsors@swamphacks.com">sponsors@swamphacks.com </a>
-      </div>
   </div>
 
 
 
 
     <!--  <img class="white-divider" src="img/swamphacks_top-border.png" alt="" /> -->
-  
+
 </div>
 <footer class="prereg-bottom">
-  <p>
+  <!-- <p>
     check us out on <a href="https://www.facebook.com/SwampHacks/">facebook</a> and <a href="https://twitter.com/SwampHacks">twitter</a>
-  </p>
-  <p>
+  </p> -->
+  <div class="email-links">
+    <a href="mailto:info@swamphacks.com">info@swamphacks.com</a>
+    <a href="mailto:sponsors@swamphacks.com">sponsors@swamphacks.com </a>
+  </div>
+  <!-- <p>
     made with <span class="glyphicon glyphicon-heart"></span> in gainesville
-  </p>
+  </p> -->
+  <span class="heart">
+    <a href="https://github.com/takashiw/takashiw.github.io" target="_blank">
+      Made with <i style="color: #FF4D40;" class="fa fa-heart pulse"></i> in Gainesville
+    </a>
+  </span>
 </footer>
 
 <!--

@@ -16,16 +16,16 @@ html,body
 }
 
 body{
-  font-family: 'Muli', sans-serif;
+  font-family: 'Pier Sans', sans-serif;
   width: 100vw;
 }
 
 
 h2 {
-  font-size: 25px;
+  font-size: 26px;
   text-align: center;
-  color: #4d94ff;
-  margin-bottom: 1em;
+  color: #3993ff;
+  margin-bottom: 60px;
 }
 
 h3 {
@@ -36,9 +36,10 @@ h3 {
   font-family: 'Muli';
 }
 h4{
-  color: #24b06f;
+  color: white;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 p{
   font-size: 14px;
@@ -50,6 +51,11 @@ br {
   line-height: 36px;
 }
 
+.email-links a {
+  color: #3993ff;
+  margin: 0 20px;
+}
+
 .about-page br {
   line-height: 44px;
 }
@@ -59,6 +65,7 @@ br {
   margin: 0px;
 }
 a:hover {
+  border-bottom: 2px solid white;
   text-decoration: none;
 }
 
@@ -67,11 +74,16 @@ a:hover {
 }
 /** ~pre-registration styles~ **/
 .input-group {
-    width: 40%;
+    width: 480px;
     margin: 0 auto;
+    /*opacity: 0.7;*/
+    font-family: 'Pier Sans';
+
 }
 .form-control {
   color: white;
+  font-size: 18px;
+
   background-color: transparent;
   outline: none;
   border: none;
@@ -79,20 +91,32 @@ a:hover {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
   width: 50%;
-  border-bottom: 2px solid #fff;
+  height: 43px;
+  /*border-bottom: 3px solid #fff;*/
   border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 10px;
+  border-radius: 8px;
+  border: 3px solid #fff;
+
 }
 input::-webkit-input-placeholder {
 color: white !important;
 }
 #subscribe {
-  opacity: .7;
   border-radius: 0;
-  background-color: transparent;
+  background-color: white;
   border-color: transparent;
-  color: white;
-  margin-left: -80px;
+  padding-top: 10px;
+  color: #97f9f0;
+  /*margin-left: -100px*/
+  border-radius: 0 8px 8px 0;
 }
+
+.btn {
+  font-size: 18px;
+}
+
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-default {
     color: white;
     background-color: transparent;
@@ -114,7 +138,10 @@ color: white !important;
 .email-links {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 10px;
+  width: 600px;
 }
+
 #submitted {
   opacity: .7;
   border-radius: 0;
@@ -230,6 +257,14 @@ color: white !important;
   font-size: 16px;
 }
 
+.prereg-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+}
+
 .footer-note .flipped {
   margin-top: -8px;
 }
@@ -275,7 +310,7 @@ color: white !important;
 }
 
 .logo-head{
-  width: 75%;
+  width: 500px;
   display: block;
   margin: auto;
 }
@@ -379,12 +414,10 @@ i {
 }
 
 .logo {
-  margin-top: 8%;
-  margin-bottom: 10%;
-    display: block;
-    margin: auto;
-    margin-right: 15%;
-    margin-left: 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-56%) translateX(-50%);
 }
 
 .attendee-buttons {
@@ -439,4 +472,26 @@ i {
 .stats-text h3 {
   color: white;
   font-weight: bold;
+}
+
+.heart a{
+  color: white;
+}
+
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  animation: pound 0.5s infinite alternate;
+  -webkit-animation: pound 0.5s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
 }
