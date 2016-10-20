@@ -1,6 +1,6 @@
 @font-face {
-font-family: Quicksand;
-src: url("../assets/quicksand/Quicksand_Regular.otf") format("opentype");
+font-family: "Pier Sans";
+src: url("../fonts/PierSans.woff") format("opentype");
 }
 
 html,body
@@ -102,6 +102,12 @@ a:hover {
 }
 input::-webkit-input-placeholder {
 color: white !important;
+}
+input, select, textarea {
+  color: #4d94ff;
+}
+textarea:focus, input:focus {
+  color: #4d94ff;
 }
 #subscribe {
   border-radius: 0;
