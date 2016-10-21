@@ -43,7 +43,10 @@ $(function() {
       email
     }).then(() =>{
       $('.submitted').text( "Thanks for subscribing!  Check your e-mail for confirmation." ).show();
-      $('#subscribe').css('color', '#4d94ff');
+      $('#subscribe').css(
+        //'color', '#fff',
+        'background-color', '#4d94ff' 
+      );
     }).then(() => {
       auth.createUserWithEmailAndPassword(email, pass);
     }).catch(e => { console.log(e); });
@@ -51,6 +54,7 @@ $(function() {
     firebase.auth().onAuthStateChanged(firebaseUser => {
       if (firebaseUser) {
         firebaseUser.sendEmailVerification();
+        console.log('the email sent');
       } else {
         console.log('something is wrong');
       }
