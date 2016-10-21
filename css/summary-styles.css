@@ -1,6 +1,6 @@
 @font-face {
-font-family: Quicksand;
-src: url("../assets/quicksand/Quicksand_Regular.otf") format("opentype");
+font-family: "Pier Sans";
+src: url("../fonts/PierSans.woff") format("opentype");
 }
 
 html,body
@@ -10,22 +10,22 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-
+    background-image: url('../img/Landing-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
-  font-family: 'Muli', sans-serif;
+  font-family: 'Pier Sans', sans-serif;
   width: 100vw;
 }
 
-.container-fluid {
-  padding: 0;
-}
 
 h2 {
+  font-size: 26px;
   text-align: center;
-  color: #24b06f;
-  font-size: 28px;
+  color: #3993ff;
+  margin-bottom: 60px;
 }
 
 h3 {
@@ -38,16 +38,22 @@ h3 {
 h4{
   color: white;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 p{
-  font-size: 20px;
+  font-size: 14px;
 }
 
 br {
   display: block;
   margin: 10px;
   line-height: 36px;
+}
+
+.email-links a {
+  color: #3993ff;
+  margin: 0 20px;
 }
 
 .about-page br {
@@ -58,15 +64,109 @@ br {
   width: 100vw;
   margin: 0px;
 }
+a:hover {
+  border-bottom: 2px solid white;
+  text-decoration: none;
+}
 
 .wrapper {
   height: auto;
 }
+/** ~pre-registration styles~ **/
+.input-group {
+    width: 480px;
+    margin: 0 auto;
+    /*opacity: 0.7;*/
+    font-family: 'Pier Sans';
 
-.white-divider {
+}
+.form-control {
+  color: white;
+  font-size: 18px;
+
+  background-color: transparent;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  width: 50%;
+  height: 43px;
+  /*border-bottom: 3px solid #fff;*/
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding-top: 10px;
+  border-radius: 12px;
+  border: 3px solid #fff;
+
+}
+input::-webkit-input-placeholder {
+color: white !important;
+}
+input, select, textarea {
+  color: #4d94ff;
+}
+textarea:focus, input:focus {
+  color: #4d94ff;
+}
+#subscribe {
+  border-radius: 0;
+  background-color: white;
+  border-color: transparent;
+  padding-top: 10px;
+  color: #97f9f0;
+  /*margin-left: -100px*/
+  border-radius: 0 12px 12px 0;
+}
+
+.btn {
+  font-size: 18px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .btn-primary:active:focus, .open>.dropdown-toggle.btn-default {
+    color: white;
+    background-color: transparent;
+    border-color: transparent; /*set the color you want here*/
+}
+.sh-countdown {
+  text-align: center;
+  margin-top: 2em;
+  margin-right: 2em;
+  color: white;
+  font-size: 16px;
+}
+.prereg-bottom {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #24b06f;
+}
+.email-links {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+#submitted {
+  opacity: .7;
+  border-radius: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: blue;
+  margin-left: -80px;
+}
+.submitted {
+    color:  white;
+    text-align: center;
+    margin-top: 1em;
+}
+/** ~end pre-registration styles~ **/
+
+/**.white-divider {
   width: 100%;;
   margin-bottom: -2px;
-}
+}**/
 
 .flipped {
   transform: rotate(180deg);
@@ -163,6 +263,14 @@ br {
   font-size: 16px;
 }
 
+.prereg-bottom {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 10px 0;
+}
+
 .footer-note .flipped {
   margin-top: -8px;
 }
@@ -189,9 +297,9 @@ br {
 }
 
 .heading-page {
-  background-image: url('../img/Landing-02.png');
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 .about-page {
@@ -208,7 +316,7 @@ br {
 }
 
 .logo-head{
-  width: 80%;
+  width: 500px;
   display: block;
   margin: auto;
 }
@@ -312,8 +420,10 @@ i {
 }
 
 .logo {
-  margin-top: 8%;
-  margin-bottom: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-56%) translateX(-50%);
 }
 
 .attendee-buttons {
@@ -368,4 +478,26 @@ i {
 .stats-text h3 {
   color: white;
   font-weight: bold;
+}
+
+.heart a{
+  color: white;
+}
+
+.heart .fa {
+  color: white;
+  margin: 0 3px;
+  animation: pound 0.5s infinite alternate;
+  -webkit-animation: pound 0.5s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes pound {
+  to {
+    transform: scale(1.2);
+  }
 }

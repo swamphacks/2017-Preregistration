@@ -1,0 +1,26 @@
+{
+  "name": "swamphacks",
+  "version": "1.0.0",
+  "description": "The static files used for the SwampHacks site.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "nodemailer": "^2.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swamphacks/SwampHacks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swamphacks/SwampHacks/issues"
+  },
+  "homepage": "https://github.com/swamphacks/SwampHacks#readme"
+}
