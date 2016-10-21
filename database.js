@@ -34,7 +34,7 @@ $(function() {
     return text;
   }
 
-  $('.email-form').on('submit', event => {
+  $('#subscribe').click( event => {
     event.preventDefault();
     var email = $("#email").val();
     var pass = makePass();
@@ -55,6 +55,8 @@ $(function() {
       if (firebaseUser) {
         firebaseUser.sendEmailVerification();
         console.log('the email sent');
+        firebase.auth().signOut();
+        console.log('signed out');
       } else {
         console.log('something is wrong');
       }
@@ -64,7 +66,6 @@ $(function() {
 
   //check if the page is refreshed, log the current user out
   $(window).bind('beforeunload', function() {
-    firebase.auth().signOut();
   });
 
 });

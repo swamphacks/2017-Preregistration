@@ -157,7 +157,7 @@ textarea:focus, input:focus {
   margin-left: -80px;
 }
 .submitted {
-    color:  white;
+    color:  #4d94ff;
     text-align: center;
     margin-top: 1em;
 }
