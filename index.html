@@ -1,34 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en">
 <head>
-	<title>SwampHacks - A University of Florida Hackathon</title>
-	<meta charset='utf-8'>
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<meta property="og:title" content="SwampHacks" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="http://swamphacks.com" />
-	<meta property="og:description" content="The official site for SwampHacks, the UF hackathon." />
-	<meta property="og:image" content="http://swamphacks.com/images/APPSOPENSmall.png" />
-	<meta name="description" content="The official site for SwampHacks, the UF hackathon.">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" type="image/png" href="images/favicon.ico"/>
-	<link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-71810641-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+  <title>SwampHacks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/summary-styles.css">
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="http://swamphacks.com/favicon.png"/>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.js"></script>
 </head>
-<body class="preload" ng-app = "tables">
+<!--<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+ga('create', 'UA-71810641-1', 'auto');
+ga('send', 'pageview');
+
+</script>-->
+<body>
+  <!-- <div id="sh-countdown" class="sh-countdown"></div>
+  <script type="text/javascript">
+  $("#sh-countdown")
+  .countdown("2017/01/20", function(event) {
+    $(this).text(
+      event.strftime('%D days, %H hours, %M minutes, and %S seconds till SwampHacks 2017!')
+    );
+  });
+</script> -->
+  <div class="container">
+    <div class = "logo">
+      <img class="logo-head" src="img/SwampHacks-LandingPage-Logo.png" alt="" />
+      <!-- <p id="typed" style="text-align: right; position: relative; margin-right: 40px; margin-top: -30px; font-family: 'Pier Sans', sans-serif; color: #24b06f;"></p> -->
+      <h2>University of Florida | January 20-22, 2017</h2>
+
+      <!-- Typing effect -->
+
+      <script>
+      $('#typed').typeIt({
+        // strings: ["Hack", "Create", "Learn", "Innovate"],
+        speed: 100,
+        deleteSpeed: 100,
+        lifeLike: true,
+        breakLines: true,
+        breakDelay: 1050,
+        autoStart: true,
+        loop: true
+      })
+      .tiType("create something you never have before")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("meet new people and build your community")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("eat ice cream out of the hands of the gods")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      .tiType("spend your January in the Florida sun")
+      .tiPause(800)
+      .tiDelete()
+      .tiPause(400)
+      </script>
+      <!-- /typing -->
+      <h4>Sign up for updates</h4>
+      <form class="email-form">
+        <div class="input-group">
+          <input type="email" id="email" class="form-control" placeholder="email address">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="subscribe">Subscribe</button>
+          </span>
+        </div>
+      </form>
+      <p class="submitted"></span>
+  </div>
+
+
+
+
+    <!--  <img class="white-divider" src="img/swamphacks_top-border.png" alt="" /> -->
+
+</div>
+<footer class="prereg-bottom">
+  <!-- <p>
+    check us out on <a href="https://www.facebook.com/SwampHacks/">facebook</a> and <a href="https://twitter.com/SwampHacks">twitter</a>
+  </p> -->
+  <div class="email-links">
+    <a href="mailto:info@swamphacks.com">info@swamphacks.com</a>
+    <a href="mailto:sponsors@swamphacks.com">sponsors@swamphacks.com </a>
+  </div>
+  <!-- <p>
+    made with <span class="glyphicon glyphicon-heart"></span> in gainesville
+  </p> -->
+  <span class="heart">
+    <a href="https://github.com/swamphacks/2017SwampHacks" target="_blank">
+      Made with <i style="color: #FF4D40;" class="fa fa-heart pulse"></i> in Gainesville
+    </a>
+  </span>
+</footer>
+
+<!--
 <a name="top">
 	<section id="menu">
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -82,13 +166,29 @@
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<h2>Thanks for an awesome time!</h2>
-          <p>
-          </p>
+          <div class="col-sm-10 col-sm-offset-1">
+            <h3 style="text-align: center;">Want to stay updated about SwampHacks 2017?</h3>
+            <p style="text-align: center;">
+              Enter your e-mail address below to subscribe to periodic updates (we won't flood your inbox, we promise!)
+            </p>
+            <form class="email-form">
+              <div class="col-lg-4 col-lg-offset-4">
+                <div class="input-group" style="padding: 20px;">
+                  <input type="email" id="email" class="form-control" />
+                  <span class="input-group-btn">
+                    <button id="email-submit" class="btn btn-default" type="button">Submit</button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+          </div>
+
 				</div>
 			</div>
 
 
-<!--
+
 
       <div class="col-sm-6">
         <h3 style="color: white;" class= "text-center" >Bulletin</h3>
@@ -138,7 +238,7 @@
         </table>
 
 
-      </div> -->
+      </div>
 
 		</div>
 
@@ -268,7 +368,6 @@
 
   <div class="sponsors">
     <section id="sponsors-ceiling">
-      <!-- TODO: Not sure if font needs modifiying?  -->
   		<div class="container sponsor-container">
   			<div class="row sponsor-title">
           <a name="sponsors-scroll">
@@ -283,9 +382,9 @@
               <img class="sponsor-image-lg img-responsive" src="images/logos/IEI_logo.svg">
             </a>
           </div>
-          <!-- <div class="col-xs-6 text-center">
+          <div class="col-xs-6 text-center">
             <img class="sponsor-image-lg img-responsive img-responsive" src="images/logos/soylent-logo.png">
-          </div> -->
+          </div>
         </div>
   			<div class="row sponsor-logo-row">
 
@@ -364,8 +463,6 @@
         </div>
 
 
-          <!--  PARTNERSHIPS  -->
-
           <div class="row sponsor-title">
     				<div class="col-md-12 text-center">
     					<h2>PARTNERS</h2>
@@ -404,9 +501,9 @@
             </div>
 
           </div>
-            <!-- <div class="col-xs-4 text-center">
+             <div class="col-xs-4 text-center">
     					<img class="sponsor-image-md img-responsive" src="images/soylent-logo.png">
-            </div> -->
+            </div>
 
 
   			</div>
@@ -415,14 +512,14 @@
   	</section>
 
     <section id="sponsors-floor">
-      <!-- TODO: Nothing really needs to go here. this section just contains the background image
+      TODO: Nothing really needs to go here. this section just contains the background image
   		<div class="container">
   			 <div class="row">
   				<div class="col-md-12 text-center">
   					<h2>footers</h2>
   				</div>
   			</div>
-  		</div> -->
+  		</div>
   	</section>
   </div>
 
@@ -478,12 +575,12 @@
 	</div>
 	</section>
 
-	<!-- <section id="bottomlink">
+	<section id="bottomlink">
 		<div class = "container">
 			<div class="row">
 				<div class="col-md-6">
 					<h2>Made with heart</h2>
-	</section> -->
+	</section>
 
 	<div class="modal fade" id="formLightBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="row">
@@ -505,6 +602,7 @@
 			</div>
 		</div>
 	</div>
+-->
 
 	<script src="js/jquery-2.1.4.js"></script>
 	<script data-require="bootstrap@*" data-semver="3.3.5" src="js/bootstrap.min.js"></script>
@@ -512,8 +610,9 @@
 	<script src="js/script.js"></script>
   <script src="app.js"></script>
   <script src="details.js"></script>
-
+  <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
   <script src="listingController.js"></script>
   <script src="listingFactory.js"></script>
+  <script src="database.js"></script>
 </body>
 </html>
