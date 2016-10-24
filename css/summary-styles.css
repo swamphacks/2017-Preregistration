@@ -24,8 +24,8 @@ body{
 h2 {
   font-size: 26px;
   text-align: center;
-  color: #3993ff;
-  margin-bottom: 60px;
+  color: #24b06f;
+  margin-bottom: 160px;
 }
 
 h3 {
@@ -324,6 +324,7 @@ textarea:focus, input:focus {
   width: 500px;
   display: block;
   margin: auto;
+  margin-top: 50px
 }
 
 .social-media {
@@ -516,6 +517,7 @@ i {
   h2 {
     font-size: 20px;
     width: 300px;
+    color: #24b06f;
   }
 
   h4 {
