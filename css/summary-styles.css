@@ -15,8 +15,9 @@ html,body
 }
 
 body{
+  margin: 0 auto;
+  padding: 0px;
   font-family: 'Pier Sans', sans-serif;
-  width: 100vw;
 }
 
 
@@ -41,13 +42,17 @@ h4{
   margin-bottom: 20px;
 }
 p{
-  font-size: 16px;
+  font-size: 20px;
 }
 
 br {
   display: block;
   margin: 10px;
   line-height: 36px;
+}
+
+.container-fluid {
+  margin: 0 auto;
 }
 
 .email-links a {
@@ -296,7 +301,7 @@ textarea:focus, input:focus {
 }
 
 .heading-page {
-  background-image: url('../img/swamphacks_summary-bg.png');/
+  background-image: url('../img/Landing-02.png');/
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
